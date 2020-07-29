@@ -53,7 +53,7 @@ $(document).ready(function () {  // Use closure, no globals
     }
 
     function results() {
-        let score = {econ: 0, dipl: 0, govt: 0, scty: 0, envo: 0};
+        let score = {econ: 0, govt: 0, scty: 0, envo: 0};
         let max_score = {...score};
         for (let i = 0; i < scores.length; i += 1 ) {
             for (let key of Object.keys(score)){
