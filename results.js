@@ -20,7 +20,6 @@ function setBarValue(name, value) {
 }
 
 econArray = ["共产主义", "社会主义", "偏向平等", "中立", "偏向市场", "资本主义", "自由放任"]
-diplArray = ["世界主义", "国际主义", "偏向国际", "中立", "偏向本国", "民族主义", "沙文主义"]
 govtArray = ["无政府主义", "自由意志主义", "偏向自由", "中立", "偏向专制", "威权主义", "极权主义"]
 sctyArray = ["变革", "进步", "偏向改良", "中立", "偏向保守", "传统", "反动"]
 envoArray = ["深绿", "生态主义", "环保优先", "中立", "发展优先", "生产主义", "环保怀疑主义"]
@@ -36,20 +35,16 @@ function setLabel(val, ary) {
 }
 
 equality = getQueryVariable("econ")
-peace = getQueryVariable("dipl")
 liberty = getQueryVariable("govt")
 progress = getQueryVariable("scty")
 ecology = getQueryVariable("envo")
 
 wealth = (100 - equality).toFixed(1)
-might = (100 - peace).toFixed(1)
 authority = (100 - liberty).toFixed(1)
 tradition = (100 - progress).toFixed(1)
 production = (100 - ecology).toFixed(1)
 setBarValue("equality", equality)
 setBarValue("wealth", wealth)
-setBarValue("peace", peace)
-setBarValue("might", might)
 setBarValue("liberty", liberty)
 setBarValue("authority", authority)
 setBarValue("progress", progress)
@@ -58,7 +53,6 @@ setBarValue("ecology", ecology)
 setBarValue("production", production)
 
 document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
 document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
 document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
 document.getElementById("environment-label").innerHTML = setLabel(ecology, envoArray)
@@ -69,9 +63,7 @@ for (var i = 0; i < ideologies.length; i++) {
     dist = 0
     dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
     dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-    dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
     dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
-//            dist += Math.pow(Math.abs(ideologies[i].stats.envo - ecology), 2)
     if (dist < ideodist) {
         ideology = ideologies[i].name
         ideodist = dist
@@ -87,7 +79,7 @@ function createImage(src, x, y, w, h) {
     }
 }
 
-window.onload = function () {
+/* window.onload = function () {
     var c = document.createElement("canvas")
     var ctx = c.getContext("2d")
     c.width = 800;
@@ -160,5 +152,5 @@ window.onload = function () {
     ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
     ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
 
-    document.getElementById("banner").src = c.toDataURL();
-}
+    document.getElementById("banner").src = c.toDataURL(); 
+} */
