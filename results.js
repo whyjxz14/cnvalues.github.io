@@ -71,7 +71,7 @@ for (var i = 0; i < ideologies.length; i++) {
 }
 document.getElementById("ideology-label").innerHTML = ideology
 
-function createImage(src, x, y, w, h) {
+/* function createImage(src, x, y, w, h) {
     img = new Image()
     img.src = src
     img.onLoad = function () {
@@ -79,7 +79,7 @@ function createImage(src, x, y, w, h) {
     }
 }
 
-/* window.onload = function () {
+ window.onload = function () {
     var c = document.createElement("canvas")
     var ctx = c.getContext("2d")
     c.width = 800;
