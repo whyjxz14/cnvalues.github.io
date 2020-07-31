@@ -40,6 +40,16 @@ ideologies = [
         "link": NaN
     },
     {
+        "name": "左翼共产主义",
+        "stats": {
+            "econ": 100,
+            "govt": 70,
+            "scty": 90
+        },
+        "desc": NaN,
+        "link": NaN
+    },
+    {
         "name": "自由意志社会主义",
         "stats": {
             "econ": 85,
