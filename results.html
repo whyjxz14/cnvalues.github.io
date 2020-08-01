@@ -335,7 +335,7 @@
     <script src="js/bootstrap-4.4.1.js"></script>
 
     <script type="text/javascript" src="js/image.js"></script>
-    <script>
+    <script type="text/javascript">
         var Version = "";
         $.ajax({
             type: "GET",
@@ -348,7 +348,7 @@
         });
     </script>
     <script type="text/javascript">
-        document.getElementById("showImg").onclick = function () {
+        $("#showImg").click(function () {
             var imageBuilder = new ImageBuilder(); // 实例化图片构造器
             imageBuilder.line.width = 1000; // 设置每行宽度
             imageBuilder.line.height = 300; // 设置每行高度
@@ -357,20 +357,20 @@
             // 填充图像数据
             imageBuilder.imgs = [
                 [
-                    document.getElementById("img-equality"),
-                    document.getElementById("img-wealth"),
+                    $("#img-equality")[0],
+                    $("#img-wealth")[0],
                 ],
                 [
-                    document.getElementById("img-liberty"),
-                    document.getElementById("img-authority"),
+                    $("#img-liberty")[0],
+                    $("#img-authority")[0],
                 ],
                 [
-                    document.getElementById("img-progress"),
-                    document.getElementById("img-tradition"),
+                    $("#img-progress")[0],
+                    $("#img-tradition")[0],
                 ],
                 [
-                    document.getElementById("img-ecology"),
-                    document.getElementById("img-production"),
+                    $("#img-ecology")[0],
+                    $("#img-production")[0],
                 ],
             ];
             // 填充Bar颜色数据
@@ -382,10 +382,10 @@
             ];
             // 填充政治坐标轴倾向数据
             imageBuilder.texts = [
-                "经济: " + document.getElementById("economic-label").innerHTML,
-                "政治: " + document.getElementById("state-label").innerHTML,
-                "社会: " + document.getElementById("society-label").innerHTML,
-                "环境: " + document.getElementById("environment-label").innerHTML,
+                "经济: " + $("#economic-label").html(),
+                "政治: " + $("#state-label").html(),
+                "社会: " + $("#society-label").html(),
+                "环境: " + $("#environment-label").html(),
             ];
             // 填充Bar百分比数据
             imageBuilder.barData = [
@@ -398,10 +398,10 @@
             imageBuilder.version = Version;
             imageBuilder.getImg(); // 绘制图片
             // 展示图片
-            document.getElementById("shows").src = imageBuilder.canvas.toDataURL(
+            $("#shows")[0].src = imageBuilder.canvas.toDataURL(
                 "image/png"
             );
-        };
+        });
     </script>
 </body>
 
