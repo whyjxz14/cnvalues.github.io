@@ -44,7 +44,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/balance.svg"
+                                        <span class="picture p2"><img id="img-equality" src="value_images/balance.svg"
                                                 height="50pt"></span>
                                         <span class="wenzi">平等 </span>
                                     </a>
@@ -76,7 +76,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/money.png" height="50pt"></span>
+                                        <span class="picture p2"><img id="img-wealth" src="value_images/money.png" height="50pt"></span>
                                         <span class="wenzi">市场</span>
                                     </a>
                                 </div>
@@ -89,7 +89,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/paper-plane (1).png"
+                                        <span class="picture p2"><img id="img-liberty" src="value_images/paper-plane (1).png"
                                                 height="50pt"></span>
                                         <span class="wenzi">自由</span>
                                     </a>
@@ -122,7 +122,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/emperor.png"
+                                        <span class="picture p2"><img id="img-authority" src="value_images/emperor.png"
                                                 height="50pt"></span>
                                         <span class="wenzi">权威</span>
                                     </a>
@@ -136,7 +136,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/atom.png" height="50pt"></span>
+                                        <span class="picture p2"><img id="img-progress" src="value_images/atom.png" height="50pt"></span>
                                         <span class="wenzi">进步</span>
                                     </a>
 
@@ -167,7 +167,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/fengshui.png"
+                                        <span class="picture p2"><img id="img-tradition" src="value_images/fengshui.png"
                                                 height="50pt"></span>
                                         <span class="wenzi">传统</span>
                                     </a>
@@ -181,7 +181,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/garden.png"
+                                        <span class="picture p2"><img id="img-ecology" src="value_images/garden.png"
                                                 height="50pt"></span>
                                         <span class="wenzi">生态</span>
                                     </a>
@@ -214,7 +214,7 @@
                             <div class="col-2">
                                 <div class="wrapper">
                                     <a href="#">
-                                        <span class="picture p2"><img src="value_images/factory.png"
+                                        <span class="picture p2"><img id="img-production" src="value_images/factory.png"
                                                 height="50pt"></span>
                                         <span class="wenzi">生产</span>
                                     </a>
@@ -278,7 +278,7 @@
                     </div>
                     <div class="col-6">
                         <div class="wrapper text-center">
-                            <button type="button" data-toggle="modal" data-target="#share"
+                            <button type="button" data-toggle="modal" data-target="#share" id="showImg"
                                 style=" width:60px;height:60px;border-radius: 50%" class="btn btn-primary ml-1"><span
                                     style="text-align: center;" class="material-icons">
                                     share
@@ -297,7 +297,7 @@
                                         </button>
                                         <!-- TODO -->
                                         <div class="t">分享</div>
-                                        <div class="dw" id="dw"></div>
+                                        <div class="dw" id="dw"><img id="shows" style="margin-right: 0; height: auto; width: 100%;"></div>
                                         <a class="down" href="" download="downImg">>save picture</a>
                                         <a href="url" id="url">
                                             <!-- TODO -->
@@ -330,20 +330,65 @@
     </script>
 
 
-    <script type="text/javascript" src="html2canvas.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="application/javascript" src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1.js"></script>
 
-    <script>
-        html2canvas(document.body, {
-            onrendered: function (canvas) {
-                var url = canvas.toDataURL();//图片地址
-                document.body.appendChild(canvas);
-            },
-            width: 300,
-            height: 300
-        });
+    <script type="text/javascript" src="js/image.js"></script>
+    <script type="text/javascript">
+            document.getElementById("showImg").onclick = function () {
+            var imageBuilder = new ImageBuilder();// 实例化图片构造器
+            imageBuilder.line.width = 1000;       // 设置每行宽度
+            imageBuilder.line.height = 300;       // 设置每行高度
+            imageBuilder.barDistance = 25;        // 设置Bar到图标的距离
+            imageBuilder.bar.height = 50;         // 设置Bar的高度
+            // 填充图像数据
+            imageBuilder.imgs = [
+                [
+                    document.getElementById("img-equality"),
+                    document.getElementById("img-wealth"),
+                ],
+                [
+                    document.getElementById("img-liberty"),
+                    document.getElementById("img-authority"),
+                ],
+                [
+                    document.getElementById("img-progress"),
+                    document.getElementById("img-tradition"),
+                ],
+                [
+                    document.getElementById("img-ecology"),
+                    document.getElementById("img-production"),
+                ],
+            ];
+            // 填充Bar颜色数据
+            imageBuilder.colors = [
+                ["#f44336", "#007bff"],
+                ["#ff9800", "#03a9f4"],
+                ["#ffeb3b", "#3f51b5"],
+                ["#8bc34a", "#9c27b0"],
+            ];
+            // 填充政治坐标轴倾向数据
+            imageBuilder.texts = [
+                "经济: " + document.getElementById("economic-label").innerHTML,
+                "政治: " + document.getElementById("state-label").innerHTML,
+                "社会: " + document.getElementById("society-label").innerHTML,
+                "环境: " + document.getElementById("environment-label").innerHTML,
+            ];
+            // 填充Bar百分比数据
+            imageBuilder.barData = [
+                [equality, wealth],
+                [ecology, production],
+                [liberty, authority],
+                [tradition, progress],
+            ];
+            imageBuilder.ideology = ideology;// 设置意识形态数据
+            imageBuilder.getImg();// 绘制图片
+            // 展示图片
+            document.getElementById("shows").src = imageBuilder.canvas.toDataURL(
+                "image/png"
+            );
+        };
     </script>
 </body>
 
