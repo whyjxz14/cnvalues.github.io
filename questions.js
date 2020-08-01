@@ -1,6 +1,6 @@
 questions = [
     {
-        "question": "面对公共危机事件，哪怕会引发民众恐慌骚乱，政府也不应该管控信息。",
+        "question": "面对公共危机事件，哪怕会引发民众恐慌骚乱，政府也不应当管控信息。",
         "effect": {
             "econ": 0,
             "govt": 10,
@@ -21,13 +21,13 @@ questions = [
         "question": "没有大国崛起，何谈小民尊严。",
         "effect": {
             "econ": 0,
-            "govt": -5,
+            "govt": -10,
             "scty": 0,
             "envo": 0
         }
     },
     {
-        "question": "国家不应继续存在。",
+        "question": "国家不应当继续存在。",
         "effect": {
             "econ": 0,
             "govt": 10,
@@ -72,10 +72,28 @@ questions = [
         }
     },
     {
-        "question": "对文化产品的一切事先审查制度都应该取消。",
+        "question": "对文化产品的一切事先审查制度都应当取消。",
         "effect": {
             "econ": 0,
             "govt": 10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "在互联网上匿名的权利应当得到保证。",
+        "effect": {
+            "econ": 0,
+            "govt": 10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "牺牲部分个人自由与权利是打击恐怖主义、保障国家安全的必要之举。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
             "scty": 0,
             "envo": 0
         }
@@ -90,7 +108,7 @@ questions = [
         }
     },
     {
-        "question": "医疗、能源、公共交通等关系民生的基础行业应该成为公共事业。",
+        "question": "医疗、能源、公共交通等关系民生的基础行业应当成为公共事业。",
         "effect": {
             "econ": 5,
             "govt": 0,
@@ -207,7 +225,7 @@ questions = [
         }
     },
     {
-        "question": "个人之间品行、能力的差异可以解释他们的贫富差异。",
+        "question": "你穷，是因为你不努力。",
         "effect": {
             "econ": -10,
             "govt": 0,
@@ -217,6 +235,42 @@ questions = [
     },
     {
         "question": "如果生活必需品的价格过高，政府应当干预市场。",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "专利制度应当被废除。",
+        "effect": {
+            "econ": 10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "人分成富人和穷人是可以接受的。",
+        "effect": {
+            "econ": -5,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "有必要要求企业根据消费者需求的比例来生产。",
+        "effect": {
+            "econ": 10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "应当对进口产品加征关税来保护国内产业。",
         "effect": {
             "econ": 5,
             "govt": 0,
@@ -306,11 +360,65 @@ questions = [
         }
     },
     {
-        "question": "我国应当援助有困难的国家。",
+        "question": "现代社会的诸多弊病是由于抛弃传统文化导致的。",
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": 5,
+            "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "性少数群体（LGBTQ+，L：女同性恋，G：男同性恋，B：双性恋，T：跨性别，Q：酷儿）是不正常的，应当对其进行矫正治疗。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "安乐死应当合法化。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "死刑终将被废除。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "外国人丰富了我国的文化。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "不孝有三，无后为大。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "科技进步不应当过快地改变社会。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": -5,
             "envo": 0
         }
     },
@@ -333,7 +441,7 @@ questions = [
         }
     },
     {
-        "question": "学校应当加强对学生的爱国主义教育。",
+        "question": "学校应当对学生进行爱国主义教育。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -351,7 +459,7 @@ questions = [
         }
     },
     {
-        "question": "族群之间存在天生的勤劳、聪明程度等的优劣差异。",
+        "question": "族群之间存在天生的智商等差异。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -369,25 +477,25 @@ questions = [
         }
     },
     {
-        "question": "性少数群体（LGBTQ+，L-女同性恋，G-男同性恋，B-双性恋，T-跨性别，Q-酷儿）是不正常的，应对其进行矫正治疗。",
+        "question": "科学无国界，但科学家有祖国。",
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": -10,
+            "scty": -5,
             "envo": 0
         }
     },
     {
-        "question": "现代社会的诸多弊病是由于抛弃传统文化导致的。",
+        "question": "我国公民应当优先于外国人。",
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": -10,
+            "scty": -5,
             "envo": 0
         }
     },
     {
-        "question": "在我国永居的外国人应当拥有与本国公民同等的政治权利。",
+        "question": "在我国居住的外国人应当拥有与本国公民同等的政治权利。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -414,7 +522,7 @@ questions = [
         }
     },
     {
-        "question": "为了环保，我可以接受由此带来的生活成本大幅增加。",
+        "question": "为了环保，可以接受由此带来的生活成本大幅增加。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -423,7 +531,52 @@ questions = [
         }
     },
     {
-        "question": "应大规模应用转基因生物以提高生产力。",
+        "question": "应当大规模应用转基因生物以提高农业产量。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": -10
+        }
+    },
+    {
+        "question": "若能得到良好的维护，核能将是优良的能量来源。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": -10
+        }
+    },
+    {
+        "question": "开采化石燃料是必要的。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": -10
+        }
+    },
+    {
+        "question": "减少废弃物应当通过减少生产来完成。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 10
+        }
+    },
+    {
+        "question": "农业生产应当保持生物多样性，即使这样会降低产量。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 10
+        }
+    },
+    {
+        "question": "太空殖民是解决地球资源枯竭的好办法。 ",
         "effect": {
             "econ": 0,
             "govt": 0,

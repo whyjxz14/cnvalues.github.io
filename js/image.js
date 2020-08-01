@@ -23,7 +23,7 @@ class ImageBuilder {
    * 版本
    * @type {string}
    */
-  version = "1.0.0";
+  version = "0.3.5 b";
   /**
    * canvas
    * @type {HTMLCanvasElement}
@@ -233,7 +233,7 @@ class ImageBuilder {
       "300 " + projectLine.size + " " + projectLine.font;
     this.canvasContext.textAlign = "right";
     this.canvasContext.fillText(
-      "cnvalues.github.io",
+      "cnvalues.gitlab.io",
       line.width - sideDistance,
       60
     );

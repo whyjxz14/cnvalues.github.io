@@ -40,7 +40,7 @@ ideologies = [
         "link": NaN
     },
     {
-        "name": "左翼共产主义",
+        "name": "卢森堡主义",
         "stats": {
             "econ": 100,
             "govt": 70,
