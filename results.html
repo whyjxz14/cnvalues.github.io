@@ -19,7 +19,7 @@
 
 <body>
     <nav>
-        <a href="#">版本号：0.3.5 b</a>
+        <a id="version" href="#">版本号：0.3.5 b</a>
         <a href="index.html">再来一遍</a>
         <a href="#">Gitlab</a>
         <a href="#">反馈</a>
@@ -335,13 +335,25 @@
     <script src="js/bootstrap-4.4.1.js"></script>
 
     <script type="text/javascript" src="js/image.js"></script>
+    <script>
+        var Version = "";
+        $.ajax({
+            type: "GET",
+            url: "info/version.json",
+            dataType: "json",
+            success: function (data) {
+                $("#version").html("版本号：" + data.version);
+                Version = data.version;
+            }
+        });
+    </script>
     <script type="text/javascript">
-            document.getElementById("showImg").onclick = function () {
-            var imageBuilder = new ImageBuilder();// 实例化图片构造器
-            imageBuilder.line.width = 1000;       // 设置每行宽度
-            imageBuilder.line.height = 300;       // 设置每行高度
-            imageBuilder.barDistance = 25;        // 设置Bar到图标的距离
-            imageBuilder.bar.height = 50;         // 设置Bar的高度
+        document.getElementById("showImg").onclick = function () {
+            var imageBuilder = new ImageBuilder(); // 实例化图片构造器
+            imageBuilder.line.width = 1000; // 设置每行宽度
+            imageBuilder.line.height = 300; // 设置每行高度
+            imageBuilder.barDistance = 25; // 设置Bar到图标的距离
+            imageBuilder.bar.height = 50; // 设置Bar的高度
             // 填充图像数据
             imageBuilder.imgs = [
                 [
@@ -382,8 +394,9 @@
                 [progress, tradition],
                 [ecology, production]
             ];
-            imageBuilder.ideology = ideology;// 设置意识形态数据
-            imageBuilder.getImg();// 绘制图片
+            imageBuilder.ideology = ideology; // 设置意识形态数据
+            imageBuilder.version = Version;
+            imageBuilder.getImg(); // 绘制图片
             // 展示图片
             document.getElementById("shows").src = imageBuilder.canvas.toDataURL(
                 "image/png"
