@@ -14,7 +14,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">CNValues <small>v0.3.5 b</small></a>
+        <a class="navbar-brand" href="/index.html">CNValues <small id="version"></small></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -65,4 +65,15 @@
     <script src="js/bootstrap-4.4.1.js"></script>
     <script src="questions.js"></script>
     <script src="quiz.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            type: "GET",
+            url: "info/version.json",
+            dataType: "json",
+            success: function (data) {
+                $("#version").html("v " + data.version);
+                Version = data.version;
+            }
+        });
+    </script>
 </body>

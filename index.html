@@ -16,7 +16,7 @@
 
 <body>
     <nav>
-        <a href="#">版本号：0.3.5 b</a>
+        <a id="version" href="#"></a>
         <a href="#">Gitlab</a>
         <a href="#">关于我们</a>
     </nav>
@@ -79,6 +79,17 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap-4.4.1.js"></script>
+        <script type="text/javascript">
+            $.ajax({
+                type: "GET",
+                url: "info/version.json",
+                dataType: "json",
+                success: function (data) {
+                    $("#version").html("版本号：" + data.version);
+                    Version = data.version;
+                }
+            });
+        </script>
 </body>
 
 </html>
