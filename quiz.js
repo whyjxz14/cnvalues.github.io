@@ -12,11 +12,11 @@ $(document).ready(function () {  // Use closure, no globals
         $("#btn-strongly-positive")
             .click(()=>{ scores[current_question] = +1.0; next_question() });
         $("#btn-positive")          
-            .click(()=>{ scores[current_question] = +0.5; next_question() });
+            .click(()=>{ scores[current_question] = +0.25; next_question() });
         $("#btn-uncertain")        
             .click(()=>{ scores[current_question] =  0.0; next_question() });
         $("#btn-negative")         
-            .click(()=>{ scores[current_question] = -0.5; next_question() });
+            .click(()=>{ scores[current_question] = -0.25; next_question() });
         $("#btn-strongly-negative")
             .click(()=>{ scores[current_question] = -1.0; next_question() });
 

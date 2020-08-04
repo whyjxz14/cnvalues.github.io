@@ -104,7 +104,7 @@ ideologies = [
         "stats": {
             "econ": 70,
             "govt": 0,
-            "scty": 5
+            "scty": 20
         },
         "desc": "民族布尔什维克主义主张将苏联式的政治经济体制与法西斯的民族主义理念结合起来，反对民主，私有经济和国际主义。",
         "link": "https://en.wikipedia.org/wiki/National_Bolshevism"
@@ -134,7 +134,7 @@ ideologies = [
         "stats": {
             "econ": 50,
             "govt": 0,
-            "scty": 0
+            "scty": 10
         },
         "desc": NaN,
         "link": "https://en.wikipedia.org/wiki/Nazism"
