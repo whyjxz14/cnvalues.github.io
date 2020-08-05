@@ -3,6 +3,7 @@ $(document).ready(function () {  // Use closure, no globals
     let current_question = 0;
 
     initialize();
+    $('.tooltipped').tooltip();
 
     function initialize() {
         scores = new Array(questions.length).fill(0);
