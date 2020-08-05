@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <title>CN Values Quiz</title>
     <link rel="icon" href="icon.png">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--js-->
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.staticfile.org/mdui/1.0.0/js/mdui.min.js"></script>
+    <script src="info/questions.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/version.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.0/css/mdui.min.css">
+    <link rel="stylesheet" href="css/quiz.css">
 </head>
 
 
@@ -36,7 +54,7 @@
 </nav>
 
 <main class="container row equal-height-row">
-    <div class="col xl8 l8 m8 s12 equal-height-col min-height-15rem">
+    <div id="question-card" class="col xl8 l8 m8 s12 equal-height-col">
         <div class="card grey lighten-3 hoverable equal-height-inner">
             <div class="card-content">
                 <div id="question-number" class="card-title center header"></div>
@@ -86,21 +104,6 @@
         </div>
     </div>
 </main>
-
-<!--js-->
-<script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://cdn.staticfile.org/mdui/1.0.0/js/mdui.min.js"></script>
-<script src="info/questions.js"></script>
-<script src="js/quiz.js"></script>
-<script src="js/version.js"></script>
-
-<!--css-->
-<link rel="stylesheet" href="https://cdn.staticfile.org/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet"
-      href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.0/css/mdui.min.css">
-<link rel="stylesheet" href="css/quiz.css">
 
 </body>
 

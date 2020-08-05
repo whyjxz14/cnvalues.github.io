@@ -93,6 +93,62 @@ $(document).ready(() => {
         }
     }
 
+    function show_image() {
+        var imageBuilder = new ImageBuilder(); // 实例化图片构造器
+        imageBuilder.line.width = 1000; // 设置每行宽度
+        imageBuilder.line.height = 300; // 设置每行高度
+        imageBuilder.barDistance = 25; // 设置Bar到图标的距离
+        imageBuilder.bar.height = 50; // 设置Bar的高度
+        // 填充图像数据
+        imageBuilder.imgs = [
+            [
+                $("#img-equality")[0],
+                $("#img-wealth")[0],
+            ],
+            [
+                $("#img-liberty")[0],
+                $("#img-authority")[0],
+            ],
+            [
+                $("#img-progress")[0],
+                $("#img-tradition")[0],
+            ],
+            [
+                $("#img-ecology")[0],
+                $("#img-production")[0],
+            ],
+        ];
+        // 填充Bar颜色数据
+        imageBuilder.colors = [
+            ["#f44336", "#007bff"],
+            ["#ff9800", "#03a9f4"],
+            ["#ffeb3b", "#3f51b5"],
+            ["#8bc34a", "#9c27b0"],
+        ];
+        // 填充政治坐标轴倾向数据
+        imageBuilder.texts = [
+            "经济: " + $("#economic-label").html(),
+            "政治: " + $("#state-label").html(),
+            "社会: " + $("#society-label").html(),
+            "环境: " + $("#environment-label").html(),
+        ];
+        // 填充Bar百分比数据
+        imageBuilder.barData = [
+            [equality, wealth],
+            [liberty, authority],
+            [progress, tradition],
+            [ecology, production]
+        ];
+        imageBuilder.ideology = ideology; // 设置意识形态数据
+        imageBuilder.version = Version;
+        imageBuilder.getImg(); // 绘制图片
+        // 展示图片
+        $("#shows")[0].src = imageBuilder.canvas.toDataURL(
+            "image/png"
+        );
+
+    }
+
 })
 
 

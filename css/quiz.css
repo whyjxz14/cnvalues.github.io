@@ -18,8 +18,8 @@ main {
     width: 100%;
 }
 
-.min-height-15rem {
-    min-height: 15rem;
+#question-card {
+    min-height: 13rem;
 }
 
 #version {

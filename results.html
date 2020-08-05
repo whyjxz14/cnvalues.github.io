@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <title>CN Values result</title>
     <link rel="icon" href="icon.png">
-</head>
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--js-->
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.staticfile.org/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.staticfile.org/mdui/1.0.0/js/mdui.min.js"></script>
+    <script src="info/ideologies.js"></script>
+    <script src="js/results.js"></script>
+    <script src="js/version.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.0/css/mdui.min.css">
+    <link rel="stylesheet" href="css/results.css">
+</head>
 
 <body>
 
@@ -41,84 +59,93 @@
         <div class="card hoverable equal-height-inner">
             <div class="card-content">
                 <div class="center card-title">CN Values 测试结果</div>
-                <ul class="collection">
-                    <li class="collection-item row center">
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/balance.svg" alt="平等">
-                            <br><span>平等</span>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/balance.svg" alt="平等">
+                        <br><span>平等</span>
+                    </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-equality" class="left">50%</span>
+                        <span id="label-econ" class="center"></span>
+                        <span id="percent-market" class="right">50%</span>
+                        <br>
+                        <div class="progress yellow">
+                            <div id="bar-equality" class="determinate red" style="width: 50%"></div>
                         </div>
-                        <div class="col xl8 l8 m8 s8">
-                            <span id="percent-equality" class="left">50%</span>
-                            <span id="label-econ" class="center"></span>
-                            <span id="percent-market" class="right">50%</span>
-                            <br>
-                            <div class="progress yellow">
-                                <div id="bar-equality" class="determinate red" style="width: 50%"></div>
-                            </div>
+                    </div>
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/money.png" alt="市场">
+                        <br><span>市场</span>
+                    </div>
+                </div>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/paper-plane%20(1).png" alt="自由">
+                        <br><span>自由</span>
+                    </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-liberty" class="left">50%</span>
+                        <span id="label-govt" class="center"></span>
+                        <span id="percent-authority" class="right">50%</span>
+                        <br>
+                        <div class="progress brown">
+                            <div id="bar-liberty" class="determinate blue" style="width: 50%"></div>
                         </div>
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/money.png" alt="市场">
-                            <br><span>市场</span>
+                    </div>
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/emperor.png" alt="权威">
+                        <br><span>权威</span>
+                    </div>
+                </div>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/atom.png" alt="进步">
+                        <br><span>进步</span>
+                    </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-progress" class="left">50%</span>
+                        <span id="label-scty" class="center"></span>
+                        <span id="percent-tradition" class="right">50%</span>
+                        <br>
+                        <div class="progress orange">
+                            <div id="bar-progress" class="determinate purple" style="width: 50%"></div>
                         </div>
-                    </li>
-                    <li class="collection-item row center">
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/paper-plane%20(1).png" alt="自由">
-                            <br><span>自由</span>
+                    </div>
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/fengshui.png" alt="传统">
+                        <br><span>传统</span>
+                    </div>
+                </div>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/garden.png" alt="生态">
+                        <br><span>生态</span>
+                    </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-ecology" class="left">50%</span>
+                        <span id="label-envo" class="center"></span>
+                        <span id="percent-production" class="right">50%</span>
+                        <br>
+                        <div class="progress grey">
+                            <div id="bar-ecology" class="determinate green" style="width: 50%"></div>
                         </div>
-                        <div class="col xl8 l8 m8 s8">
-                            <span id="percent-liberty" class="left">50%</span>
-                            <span id="label-govt" class="center"></span>
-                            <span id="percent-authority" class="right">50%</span>
-                            <br>
-                            <div class="progress brown">
-                                <div id="bar-liberty" class="determinate blue" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/emperor.png" alt="权威">
-                            <br><span>权威</span>
-                        </div>
-                    </li>
-                    <li class="collection-item row center">
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/atom.png" alt="进步">
-                            <br><span>进步</span>
-                        </div>
-                        <div class="col xl8 l8 m8 s8">
-                            <span id="percent-progress" class="left">50%</span>
-                            <span id="label-scty" class="center"></span>
-                            <span id="percent-tradition" class="right">50%</span>
-                            <br>
-                            <div class="progress orange">
-                                <div id="bar-progress" class="determinate purple" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/fengshui.png" alt="传统">
-                            <br><span>传统</span>
-                        </div>
-                    </li>
-                    <li class="collection-item row center">
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/garden.png" alt="生态">
-                            <br><span>生态</span>
-                        </div>
-                        <div class="col xl8 l8 m8 s8">
-                            <span id="percent-ecology" class="left">50%</span>
-                            <span id="label-envo" class="center"></span>
-                            <span id="percent-production" class="right">50%</span>
-                            <br>
-                            <div class="progress grey">
-                                <div id="bar-ecology" class="determinate green" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="col xl2 l2 m2 s2">
-                            <img src="value_images/factory.png" alt="生产">
-                            <br><span>生产</span>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/factory.png" alt="生产">
+                        <br><span>生产</span>
+                    </div>
+                </div>
+<!--                <div id="special-row" class="collection-item row center"-->
+<!--                     style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center">-->
+<!--                    <div class="col xl2 l2 m2 s2 no-padding">-->
+<!--                        <img src="value_images/balance.svg" alt="平等">-->
+<!--                        <br><span>平等</span>-->
+<!--                    </div>-->
+<!--                    <div class="col xl2 l2 m2 s2 no-padding">-->
+<!--                        <img src="value_images/balance.svg" alt="平等">-->
+<!--                        <br><span>平等</span>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <h5 class="center">最接近的意识形态：<span id="ideology-label"></span></h5>
             </div>
         </div>
@@ -141,33 +168,18 @@
     </a>
 </div>
 
-<div id="share" class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
+<div class="fixed-action-btn">
+    <a id="share" class="btn-floating btn-large red">
         <i class="large material-icons">share</i>
     </a>
     <ul>
-        <li><a class="btn-floating red"><i class="material-icons">download</i></a></li>
-        <li><a class="btn-floating yellow"><i class="material-icons">twitter</i></a></li>
-        <li><a class="btn-floating green"><i class="material-icons">facebook</i></a></li>
-        <li><a class="btn-floating blue"><i class="material-icons">instagram</i></a></li>
+        <li><a id="show-img" class="btn-floating red redtooltipped"
+               data-tooltip="下载截图"><i class="material-icons">get_app</i></a></li>
+        <li><a id="share-twitter" class="btn-floating blue"><i class="material-icons">twitter</i></a></li>
+        <li><a id="share-facebook" class="btn-floating indigo"><i class="material-icons">facebook</i></a></li>
     </ul>
 </div>
 
-<!--js-->
-<script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://cdn.staticfile.org/html2canvas/0.4.1/html2canvas.min.js"></script>
-<script src="https://cdn.staticfile.org/mdui/1.0.0/js/mdui.min.js"></script>
-<script src="info/ideologies.js"></script>
-<script src="js/results.js"></script>
-<script src="js/version.js"></script>
-
-<!--css-->
-<link rel="stylesheet" href="https://cdn.staticfile.org/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet"
-      href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.0/css/mdui.min.css">
-<link rel="stylesheet" href="css/results.css">
 </body>
 
 </html>

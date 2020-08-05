@@ -19,11 +19,15 @@ main {
 }
 
 img {
-    height: 50px;
+    width: 75%;
 }
 
 .progress {
-    height: 30px;
+    height: 25px;
+}
+
+#special-row div {
+    margin: 0;
 }
 
 #ideology-desc {
