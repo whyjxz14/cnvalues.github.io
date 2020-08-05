@@ -12,7 +12,7 @@ questions = [
         "question": "即使面临人口膨胀或人口老龄化的压力，生不生、生多少小孩也是每个人的自由。",
         "effect": {
             "econ": 0,
-            "govt": 10,
+            "govt": 5,
             "scty": 0,
             "envo": 0
         }
@@ -30,7 +30,7 @@ questions = [
         "question": "国家不应当继续存在。",
         "effect": {
             "econ": 0,
-            "govt": 10,
+            "govt": 15,
             "scty": 0,
             "envo": 0
         }
@@ -108,7 +108,7 @@ questions = [
         }
     },
     {
-        "question": "大麻应当去罪化。",
+        "question": "大麻应当合法化。",
         "effect": {
             "econ": 0,
             "govt": 10,
@@ -117,10 +117,64 @@ questions = [
         }
     },
     {
-        "question": "若失去国家机器的治理，社会将陷入无序状态。",
+        "question": "政府有权拒绝过高的拆迁补偿要求。",
         "effect": {
             "econ": 0,
             "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "如果政府的政策给民众带来了好处，民众应当感恩政府。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "中国网络平台的封号和删帖是互联网企业自身的行为，与政府无关。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "如果是我支持的政党执政，我不介意实行一党制。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "领导人执政越久就越有经验，因此领导人长期执政比频繁更换要好。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "进城农民工、外来打工者应享受与本地人同等的待遇。",
+        "effect": {
+            "econ": 0,
+            "govt": 5,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "若失去国家机器的治理，社会将陷入无序状态。",
+        "effect": {
+            "econ": 0,
+            "govt": -15,
             "scty": 0,
             "envo": 0
         }
@@ -191,14 +245,14 @@ questions = [
     {
         "question": "雇佣劳动是资本家对劳动者的剥削和奴役。",
         "effect": {
-            "econ": 10,
+            "econ": 15,
             "govt": 0,
             "scty": 0,
             "envo": 0
         }
     },
     {
-        "question": "不应当打击市场经济中诞生的寡头。",
+        "question": "不应当打击市场经济中自然形成的垄断。",
         "effect": {
             "econ": -10,
             "govt": 0,
@@ -227,7 +281,7 @@ questions = [
     {
         "question": "生产资料私有制应当被废除。",
         "effect": {
-            "econ": 10,
+            "econ": 15,
             "govt": 0,
             "scty": 0,
             "envo": 0
@@ -297,6 +351,24 @@ questions = [
         }
     },
     {
+        "question": "退休年龄应当调低。",
+        "effect": {
+            "econ": 10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "罢工是一种懒惰自私的行为，给他人造成了麻烦。",
+        "effect": {
+            "econ": -10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
         "question": "只要员工同意，企业就有权延长工作时间。",
         "effect": {
             "econ": -10,
@@ -337,7 +409,7 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": 10,
+            "scty": 15,
             "envo": 0
         }
     },
@@ -400,7 +472,7 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": 10,
+            "scty": 15,
             "envo": 0
         }
     },
@@ -409,7 +481,7 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": 10,
+            "scty": 15,
             "envo": 0
         }
     },
@@ -437,6 +509,24 @@ questions = [
             "econ": 0,
             "govt": 0,
             "scty": -5,
+            "envo": 0
+        }
+    },
+    {
+        "question": "中小学应当开设性教育课程。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "国际事务中的冲突归根到底是文明的冲突。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": -10,
             "envo": 0
         }
     },
@@ -472,7 +562,7 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": 10,
+            "scty": 15,
             "envo": 0
         }
     },
@@ -563,7 +653,7 @@ questions = [
             "econ": 0,
             "govt": 0,
             "scty": 0,
-            "envo": -10
+            "envo": -5
         }
     },
     {
@@ -573,15 +663,6 @@ questions = [
             "govt": 0,
             "scty": 0,
             "envo": -10
-        }
-    },
-    {
-        "question": "减少废弃物应当通过减少生产来完成。",
-        "effect": {
-            "econ": 0,
-            "govt": 0,
-            "scty": 0,
-            "envo": 10
         }
     },
     {
@@ -600,6 +681,15 @@ questions = [
             "govt": 0,
             "scty": 0,
             "envo": -10
+        }
+    },
+    {
+        "question": "人类不应食用或奴役其他动物。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 0,
+            "envo": 15
         }
     },
     {

@@ -18,8 +18,24 @@ main {
     width: 100%;
 }
 
-.min-height-15rem {
-    min-height: 15rem;
+img {
+    height: 50px;
+}
+
+.progress {
+    height: 30px;
+}
+
+#ideology-desc {
+    text-indent: 2em;
+}
+
+#ideology-link {
+    word-break: break-all;
+}
+
+#test-again {
+    right: 90px;
 }
 
 #version {

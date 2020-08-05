@@ -1,79 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-    <title>CNValues测试</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="x-icon" href="icon.png">
-    <link rel="icon" type="x-icon" href="icon.png">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-    <link href="css/quiz.css" rel="stylesheet">
-    </script>
+    <title>CN Values Quiz</title>
+    <link rel="icon" href="icon.png">
 </head>
 
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">CNValues <small id="version"></small></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link"
-                        href="#">Gitlab</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">关于我们</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-12 question-container">
-                <div class="question-inner">
-                    <p class="lead" id="question-text"></p>
-                </div>
+
+<nav class="teal">
+    <div class="nav-wrapper container">
+        <div id="logo-container" href="#" class="brand-logo left">CN Values Quiz</div>
+        <ul class="right">
+            <li id="version">Version:</li>
+            <!--            <li><a id="github" class="mdui-btn mdui-btn-icon waves-effect tooltipped"-->
+            <!--                   data-tooltip="Github">-->
+            <!--                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"-->
+            <!--                     width="24" height="24"-->
+            <!--                     viewBox="0 0 24 24"-->
+            <!--                     style="fill:#FFFFFF;">-->
+            <!--                    <path d="M 4.0625 4 C 4.0625 4 3.53125 4.925781 3.53125 6.5 C 3.53125 7.546875 3.765625 8.125 3.9375 8.40625 C 2.734375 9.660156 2 11.347656 2 13.53125 C 2 19.125 5.527344 21 12 21 C 18.472656 21 22 19.125 22 13.53125 C 22 11.269531 21.304688 9.574219 20.15625 8.34375 C 20.441406 7.488281 20.769531 5.871094 19.96875 4 C 17.582031 4 15.570313 5.839844 15.5 5.90625 C 14.386719 5.660156 13.210938 5.53125 12 5.53125 C 10.761719 5.53125 9.542969 5.6875 8.40625 5.96875 C 6.808594 4.378906 4.886719 4 4.0625 4 Z M 15.21875 12 C 15.820313 11.992188 16.386719 12.054688 16.875 12.21875 C 18.179688 12.660156 19 13.945313 19 15.375 C 18.996094 19.339844 16.996094 20 11.875 20 C 8.066406 20 4.96875 19.285156 4.96875 15.5 C 4.96875 14.054688 5.71875 13.226563 6.25 12.71875 C 7.417969 11.601563 9.257813 12.15625 11.875 12.15625 C 13.0625 12.15625 14.214844 12.011719 15.21875 12 Z M 8 14 C 7.449219 14 7 14.671875 7 15.5 C 7 16.328125 7.449219 17 8 17 C 8.550781 17 9 16.328125 9 15.5 C 9 14.671875 8.550781 14 8 14 Z M 16 14 C 15.449219 14 15 14.671875 15 15.5 C 15 16.328125 15.449219 17 16 17 C 16.550781 17 17 16.328125 17 15.5 C 17 14.671875 16.550781 14 16 14 Z"></path>-->
+            <!--                </svg>-->
+            <!--            </a>-->
+            <li><a id="feedback" class="mdui-btn mdui-btn-icon waves-effect tooltipped"
+                   data-tooltip="反馈">
+                <i class="mdui-icon material-icons">feedback</i></a>
+            </li>
+            <li><a id="about-us" class="mdui-btn mdui-btn-icon waves-effect tooltipped"
+                   data-tooltip="关于我们">
+                <i class="mdui-icon material-icons">info</i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container row equal-height-row">
+    <div class="col xl8 l8 m8 s12 equal-height-col min-height-15rem">
+        <div class="card grey lighten-3 hoverable equal-height-inner">
+            <div class="card-content">
+                <div id="question-number" class="card-title center header"></div>
+                <div id="question-text" class="center flow-text"></div>
             </div>
-            <div class="col-lg-4 col-12 selection-container">
-                <div class="card">
-                    <div class="card-title">
-                        <h2 style="text-align:center;" id="question-number">载入中……</h2>
-                    </div>
-                    <div class="card-body text-center">
-                        <button type="button" id="btn-strongly-positive" class="btn btn-success btn-lg btn-block"
-                            style="background-color: #1b5e20;">强烈同意</button>
-                        <button type="button" id="btn-positive"
-                            class="btn btn-success btn-lg btn-block mt-2">同意</button>
-                        <button type="button" id="btn-uncertain"
-                            class="btn btn-light btn-lg btn-block mt-2">中立/不确定</button>
-                        <button type="button" id="btn-negative" class="btn btn-danger btn-lg btn-block mt-2">反对</button>
-                        <button type="button" id="btn-strongly-negative" class="btn btn-danger btn-lg btn-block mt-2"
-                            style="background-color: #b71c1c;">强烈反对</button>
-                        <button type="button" id="btn-prev" class="btn btn-primary btn-lg mt-4">返回</button>
-                    </div>
-                </div>
+        </div>
+
+    </div>
+    <div class="col xl4 l4 m4 s12 equal-height-col">
+        <div class="equal-height-inner">
+            <div class="row">
+                <button id="btn-strongly-positive"
+                        class="btn-large green waves-effect col xl10 l10 m10 s10 offset-xl1 offset-l1 offset-m1 offset-s1">
+                    强烈同意
+                </button>
+            </div>
+            <div class="row">
+                <button id="btn-positive"
+                        class="btn-large green lighten-3 waves-effect col xl10 l10 m10 s10 offset-xl1 offset-l1 offset-m1 offset-s1">
+                    同意
+                </button>
+            </div>
+            <div class="row">
+                <button id="btn-uncertain"
+                        class="btn-large grey waves-effect col xl10 l10 m10 s10 offset-xl1 offset-l1 offset-m1 offset-s1">
+                    中立/不确定
+                </button>
+            </div>
+            <div class="row">
+                <button id="btn-negative"
+                        class="btn-large red lighten-3 waves-effect col xl10 l10 m10 s10 offset-xl1 offset-l1 offset-m1 offset-s1">
+                    反对
+                </button>
+            </div>
+            <div class="row">
+                <button id="btn-strongly-negative"
+                        class="btn-large red waves-effect col xl10 l10 m10 s10 offset-xl1 offset-l1 offset-m1 offset-s1">
+                    强烈反对
+                </button>
+            </div>
+            <div class="row">
+                <button id="btn-prev"
+                        class="btn-large blue waves-effect col xl10 l10 m10 s10 offset-xl1 offset-l1 offset-m1 offset-s1">
+                    前一题
+                </button>
             </div>
         </div>
     </div>
-    <!-- JavaScript for the test itself -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-    <script src="questions.js"></script>
-    <script src="quiz.js"></script>
-    <script type="text/javascript">
-        $.ajax({
-            type: "GET",
-            url: "info/version.json",
-            dataType: "json",
-            success: function (data) {
-                $("#version").html("v " + data.version);
-                Version = data.version;
-            }
-        });
-    </script>
+</main>
+
+<!--js-->
+<script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.staticfile.org/mdui/1.0.0/js/mdui.min.js"></script>
+<script src="info/questions.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/version.js"></script>
+
+<!--css-->
+<link rel="stylesheet" href="https://cdn.staticfile.org/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.0/css/mdui.min.css">
+<link rel="stylesheet" href="css/quiz.css">
+
 </body>
+
+</html>
