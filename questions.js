@@ -9,7 +9,7 @@ questions = [
         }
     },
     {
-        "question": "即使面临人口膨胀或人口老龄化的压力，生不生、生多少小孩也是每个人的自由。",
+        "question": "即使面临人口膨胀或人口老龄化的压力，生不生、生多少小孩也是每个人的自由，政府不应当干涉。",
         "effect": {
             "econ": 0,
             "govt": 5,
@@ -27,7 +27,7 @@ questions = [
         }
     },
     {
-        "question": "国家不应当继续存在。",
+        "question": "一切国家都不应当继续存在。",
         "effect": {
             "econ": 0,
             "govt": 15,
@@ -36,7 +36,7 @@ questions = [
         }
     },
     {
-        "question": "西方多党制下相互扯皮，效率低下。",
+        "question": "多党制下相互扯皮，效率低下。",
         "effect": {
             "econ": 0,
             "govt": -5,
@@ -153,7 +153,7 @@ questions = [
         }
     },
     {
-        "question": "领导人执政越久就越有经验，因此领导人长期执政比频繁更换要好。",
+        "question": "处于关键时刻的国家需要政治强人。",
         "effect": {
             "econ": 0,
             "govt": -10,
@@ -162,7 +162,7 @@ questions = [
         }
     },
     {
-        "question": "进城农民工、外来打工者应享受与本地人同等的待遇。",
+        "question": "进城农民工、外来打工者应享受与本地人同等的教育、医疗、住房等待遇。",
         "effect": {
             "econ": 0,
             "govt": 5,
@@ -171,10 +171,28 @@ questions = [
         }
     },
     {
-        "question": "若失去国家机器的治理，社会将陷入无序状态。",
+        "question": "突发重大事件时，国家可以悬置宪法和法律，行使紧急权力，采取一切必要的非常措施。",
         "effect": {
             "econ": 0,
-            "govt": -15,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "为避免金钱政治与恶性竞争，应该在政府的指导帮助下进行选举。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "不陷入混乱的无政府状态是可以实现的。",
+        "effect": {
+            "econ": 0,
+            "govt": 15,
             "scty": 0,
             "envo": 0
         }
@@ -216,16 +234,7 @@ questions = [
         }
     },
     {
-        "question": "为了经济增长，可以默许市场和企业对劳工权益的一些损害。",
-        "effect": {
-            "econ": -10,
-            "govt": 0,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-    {
-        "question": "有钱人用金钱购买更好的教育和医疗等服务是合理的。",
+        "question": "为了经济增长，可以默许市场和企业对劳动者权益的一些损害。",
         "effect": {
             "econ": -10,
             "govt": 0,
@@ -245,7 +254,7 @@ questions = [
     {
         "question": "雇佣劳动是资本家对劳动者的剥削和奴役。",
         "effect": {
-            "econ": 15,
+            "econ": 10,
             "govt": 0,
             "scty": 0,
             "envo": 0
@@ -261,24 +270,6 @@ questions = [
         }
     },
     {
-        "question": "亏损国企与其继续亏损，不如私有化卖给资本家。",
-        "effect": {
-            "econ": -5,
-            "govt": 0,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-    {
-        "question": "底层民众深受经济全球化所害。",
-        "effect": {
-            "econ": 10,
-            "govt": 0,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-    {
         "question": "生产资料私有制应当被废除。",
         "effect": {
             "econ": 15,
@@ -288,9 +279,9 @@ questions = [
         }
     },
     {
-        "question": "我国的工业体系必须独立自主。",
+        "question": "一些工业部门由私人所有是可以接受的。",
         "effect": {
-            "econ": 5,
+            "econ": -10,
             "govt": 0,
             "scty": 0,
             "envo": 0
@@ -369,6 +360,69 @@ questions = [
         }
     },
     {
+        "question": "一切企业都应当被没收充公。",
+        "effect": {
+            "econ": 15,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "我国资本应积极走出去，输出国外。",
+        "effect": {
+            "econ": -10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "外包和离岸生产对于提高生产率是必要的。",
+        "effect": {
+            "econ": -10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "一些学校和大学可以是私立的。",
+        "effect": {
+            "econ": -10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "除非理由正当，否则不可解雇员工。",
+        "effect": {
+            "econ": 10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "应该确立最低工资标准以保证劳动者能靠劳动活下去。",
+        "effect": {
+            "econ": 5,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "企业的管理权应该属于员工。",
+        "effect": {
+            "econ": 10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
         "question": "只要员工同意，企业就有权延长工作时间。",
         "effect": {
             "econ": -10,
@@ -396,7 +450,7 @@ questions = [
         }
     },
     {
-        "question": "同性伴侣婚姻应当合法化。",
+        "question": "同性伴侣婚姻应当合法化。同性恋者在婚姻、亲子关系、收养或生育方面，应与异性恋者同等对待。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -432,7 +486,16 @@ questions = [
         }
     },
     {
-        "question": "女子无才便是德。",
+        "question": "男性和女性不同的社会角色可以部分归因于他们在生理上的不同。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": -5,
+            "envo": 0
+        }
+    },
+    {
+        "question": "女权主义已经过头了。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -441,7 +504,7 @@ questions = [
         }
     },
     {
-        "question": "女性的地位已经高于男性，女权主义应当被遏制。",
+        "question": "现代社会的诸多弊病是由于抛弃传统导致的。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -450,7 +513,7 @@ questions = [
         }
     },
     {
-        "question": "现代社会的诸多弊病是由于抛弃传统文化导致的。",
+        "question": "应当对性少数群体（LGBTQ+，L：女同性恋，G：男同性恋，B：双性恋，T：跨性别，Q：酷儿）进行矫正治疗。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -459,20 +522,11 @@ questions = [
         }
     },
     {
-        "question": "性少数群体（LGBTQ+，L：女同性恋，G：男同性恋，B：双性恋，T：跨性别，Q：酷儿）是不正常的，应当对其进行矫正治疗。",
+        "question": "除非身患绝症，否则放弃生命是一种不负责任的行为。",
         "effect": {
             "econ": 0,
             "govt": 0,
             "scty": -10,
-            "envo": 0
-        }
-    },
-    {
-        "question": "安乐死应当合法化。",
-        "effect": {
-            "econ": 0,
-            "govt": 0,
-            "scty": 15,
             "envo": 0
         }
     },
@@ -495,7 +549,7 @@ questions = [
         }
     },
     {
-        "question": "不孝有三，无后为大。",
+        "question": "做一个好主妇、好母亲，是女人最大的本事。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -527,6 +581,15 @@ questions = [
             "econ": 0,
             "govt": 0,
             "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "“男性”与“女性”这两种社会结构类别应当被抛弃。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 15,
             "envo": 0
         }
     },
