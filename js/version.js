@@ -3,6 +3,6 @@ $.ajax({
     url: "info/version.json",
     dataType: "json",
     success: (data) => {
-        $("#version").html("版本号：" + data.version)
+        $("#version").html("v " + data.version)
     }
 })
