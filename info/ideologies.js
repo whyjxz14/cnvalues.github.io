@@ -34,7 +34,7 @@ ideologies = [
         "stats": {
             "econ": 100,
             "govt": 30,
-            "scty": 60
+            "scty": 75
         },
         "desc": "列宁主义主张建立民主集中制的先锋党并通过革命推翻资本主义，为了实现目标，不排斥临时的强制政策。",
         "link": "https://en.wikipedia.org/wiki/Leninism"
