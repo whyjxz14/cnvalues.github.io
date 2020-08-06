@@ -136,7 +136,7 @@ ideologies = [
             "govt": 0,
             "scty": 10
         },
-        "desc": NaN,
+        "desc": "纳粹主义是法西斯主义的形式之一，推崇种族主义，并且比一般的法西斯主义更加倾向于国家统辖经济。",
         "link": "https://en.wikipedia.org/wiki/Nazism"
     },
     {
@@ -146,7 +146,7 @@ ideologies = [
             "govt": 45,
             "scty": 40
         },
-        "desc": NaN,
+        "desc": "基督教民主主义强调传统价值观中反对个人利己主义而推崇集体主义的一面，并将其与现代自由民主制结合起来。",
         "link": "https://en.wikipedia.org/wiki/Christian_democracy"
     },
     {
@@ -176,7 +176,7 @@ ideologies = [
             "govt": 5,
             "scty": 15
         },
-        "desc": NaN,
+        "desc": "法西斯主义是一种极端的民族主义，强调为了在国际竞争中保障本民族利益，国家必须实行铁腕的独裁统治，以掌控社会的各个方面。",
         "link": "https://en.wikipedia.org/wiki/Fascism"
     },
     {
@@ -256,7 +256,7 @@ ideologies = [
             "govt": 100,
             "scty": 50
         },
-        "desc": NaN,
+        "desc": "无政府资本主义主张取消国家机器，按照互不侵犯原则组织社会，以保障私有制和市场经济的自由发展。",
         "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism"
     },
     {

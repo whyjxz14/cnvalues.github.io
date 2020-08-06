@@ -198,7 +198,7 @@ questions = [
         }
     },
     {
-        "question": "废除警察和军队，",
+        "question": "废除警察和军队，以私人安保公司/民兵组织来维持治安是可行的。",
         "effect": {
             "econ": 0,
             "govt": 10,
@@ -540,7 +540,7 @@ questions = [
         }
     },
     {
-        "question": "死刑终将被废除。",
+        "question": "死刑最终应当被废除。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -625,7 +625,7 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": -10,
+            "scty": 10,
             "envo": 0
         }
     },
@@ -639,7 +639,7 @@ questions = [
         }
     },
     {
-        "question": "国家和地区之间的边界终将被废除。",
+        "question": "国家和地区之间的边界最终应当被废除。",
         "effect": {
             "econ": 0,
             "govt": 0,
