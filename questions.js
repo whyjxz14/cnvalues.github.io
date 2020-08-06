@@ -54,7 +54,7 @@ questions = [
         }
     },
     {
-        "question": "政治领袖的形象可以作为文艺作品的丑化对象。",
+        "question": "政治领袖/宗教神明的形象可以作为文艺作品的丑化对象。",
         "effect": {
             "econ": 0,
             "govt": 10,
@@ -180,10 +180,28 @@ questions = [
         }
     },
     {
-        "question": "为避免金钱政治与恶性竞争，应该在政府的指导帮助下进行选举。",
+        "question": "为避免金钱政治与恶性竞争，应当在政府的指导帮助下进行选举。",
         "effect": {
             "econ": 0,
             "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "相比于等待那些具备潜在危险性的人去犯罪，不如提前把他们逮捕。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "废除警察和军队，以私人安保公司/民兵组织来维持治安是可行的。",
+        "effect": {
+            "econ": 0,
+            "govt": 10,
             "scty": 0,
             "envo": 0
         }
@@ -297,15 +315,6 @@ questions = [
         }
     },
     {
-        "question": "有必要在生活必需品的价格过高时干预市场。",
-        "effect": {
-            "econ": 5,
-            "govt": 0,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-    {
         "question": "专利制度应当被废除。",
         "effect": {
             "econ": 10,
@@ -317,7 +326,7 @@ questions = [
     {
         "question": "人分成富人和穷人是可以接受的。",
         "effect": {
-            "econ": -5,
+            "econ": -10,
             "govt": 0,
             "scty": 0,
             "envo": 0
@@ -405,7 +414,7 @@ questions = [
         }
     },
     {
-        "question": "应该确立最低工资标准以保证劳动者能靠劳动活下去。",
+        "question": "应当确立最低工资标准以保证劳动者能靠劳动活下去。",
         "effect": {
             "econ": 5,
             "govt": 0,
@@ -414,7 +423,16 @@ questions = [
         }
     },
     {
-        "question": "企业的管理权应该属于员工。",
+        "question": "企业的管理权应当属于全体劳动者。",
+        "effect": {
+            "econ": 10,
+            "govt": 0,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "当今世界，各国广大劳动者权益更加紧密地联系在一起。",
         "effect": {
             "econ": 10,
             "govt": 0,
@@ -441,16 +459,7 @@ questions = [
         }
     },
     {
-        "question": "父母不应当干涉子女的婚嫁。",
-        "effect": {
-            "econ": 0,
-            "govt": 0,
-            "scty": 5,
-            "envo": 0
-        }
-    },
-    {
-        "question": "同性伴侣婚姻应当合法化。同性恋者在婚姻、亲子关系、收养或生育方面，应与异性恋者同等对待。",
+        "question": "同性伴侣婚姻应当合法化，同性恋者在婚姻、亲子关系、收养或生育方面，应与异性恋者同等对待。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -477,7 +486,7 @@ questions = [
         }
     },
     {
-        "question": "与现代医学相比，我国传统医学更值得信任。",
+        "question": "与现代医学相比，传统医学更值得信任。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -490,7 +499,7 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": -5,
+            "scty": -10,
             "envo": 0
         }
     },
@@ -540,11 +549,11 @@ questions = [
         }
     },
     {
-        "question": "外国人丰富了我国的文化。",
+        "question": "多元文化是对文明的威胁。",
         "effect": {
             "econ": 0,
             "govt": 0,
-            "scty": 10,
+            "scty": -10,
             "envo": 0
         }
     },
@@ -567,7 +576,7 @@ questions = [
         }
     },
     {
-        "question": "中小学应当开设性教育课程。",
+        "question": "中小学应当开设系统的性教育（包括多元性别教育）必修课。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -594,25 +603,34 @@ questions = [
         }
     },
     {
-        "question": "祖国统一和领土完整高于一切。",
+        "question": "色情内容败坏社会风气，有必要进行打击。",
         "effect": {
             "econ": 0,
             "govt": 0,
             "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "学校应当多传授我们的价值观和传统。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "所有的人民都有自决权。依据这个权利，他们自由地决定他们的政治地位，自由地发展他们的经济，社会和文化。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": 10,
             "envo": 0
         }
     },
     {
         "question": "没有祖国，你什么都不是。",
-        "effect": {
-            "econ": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-    {
-        "question": "学校应当对学生进行爱国主义教育。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -657,16 +675,7 @@ questions = [
         }
     },
     {
-        "question": "我国公民应当优先于外国人。",
-        "effect": {
-            "econ": 0,
-            "govt": 0,
-            "scty": -5,
-            "envo": 0
-        }
-    },
-    {
-        "question": "在我国居住的外国人应当拥有与本国公民同等的政治权利。",
+        "question": "在我国居住的外国人应当拥有与本国公民同等的权利。",
         "effect": {
             "econ": 0,
             "govt": 0,
