@@ -18,8 +18,28 @@ main {
     width: 100%;
 }
 
-#question-card {
-    min-height: 13rem;
+img {
+    width: 75%;
+}
+
+.progress {
+    height: 25px;
+}
+
+#special-row div {
+    margin: 0;
+}
+
+#ideology-desc {
+    text-indent: 2em;
+}
+
+#ideology-link {
+    word-break: break-all;
+}
+
+#test-again {
+    right: 90px;
 }
 
 #version {

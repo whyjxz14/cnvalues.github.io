@@ -1,95 +1,102 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CNValues</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="shortcut icon" type="x-icon" href="icon.png">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-    <!-- Open Iconic -->
-    <link href="open-iconic/font/css/open-iconic-foundation.min.css" rel="stylesheet">
+    <title>CN Values</title>
+    <link rel="icon" href="icon.png">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--js-->
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.staticfile.org/mdui/1.0.0/js/mdui.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/version.js"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.0/css/mdui.min.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <nav>
-        <a id="version" href="#"></a>
-        <a href="#">Gitlab</a>
-        <a href="#">关于我们</a>
-    </nav>
 
-    <div class="jumbotron jumbotron-fluid text-center">
-        <p>CNValues是一个基于8Values源代码开发制作的在中国语境下的娱乐站队测试。</p>
-
-        <div>
-            <button class="btn btn-primary btn-lg shadow" data-toggle="modal" data-target="#startmodal">点击开始</button>
-        </div>
+<nav class="teal">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo left">CN Values</a>
+        <ul class="right">
+            <li id="version"></li>
+            <!--            <li><a id="github" class="mdui-btn mdui-btn-icon waves-effect tooltipped"-->
+            <!--                   data-tooltip="Github">-->
+            <!--                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"-->
+            <!--                     width="24" height="24"-->
+            <!--                     viewBox="0 0 24 24"-->
+            <!--                     style="fill:#FFFFFF;">-->
+            <!--                    <path d="M 4.0625 4 C 4.0625 4 3.53125 4.925781 3.53125 6.5 C 3.53125 7.546875 3.765625 8.125 3.9375 8.40625 C 2.734375 9.660156 2 11.347656 2 13.53125 C 2 19.125 5.527344 21 12 21 C 18.472656 21 22 19.125 22 13.53125 C 22 11.269531 21.304688 9.574219 20.15625 8.34375 C 20.441406 7.488281 20.769531 5.871094 19.96875 4 C 17.582031 4 15.570313 5.839844 15.5 5.90625 C 14.386719 5.660156 13.210938 5.53125 12 5.53125 C 10.761719 5.53125 9.542969 5.6875 8.40625 5.96875 C 6.808594 4.378906 4.886719 4 4.0625 4 Z M 15.21875 12 C 15.820313 11.992188 16.386719 12.054688 16.875 12.21875 C 18.179688 12.660156 19 13.945313 19 15.375 C 18.996094 19.339844 16.996094 20 11.875 20 C 8.066406 20 4.96875 19.285156 4.96875 15.5 C 4.96875 14.054688 5.71875 13.226563 6.25 12.71875 C 7.417969 11.601563 9.257813 12.15625 11.875 12.15625 C 13.0625 12.15625 14.214844 12.011719 15.21875 12 Z M 8 14 C 7.449219 14 7 14.671875 7 15.5 C 7 16.328125 7.449219 17 8 17 C 8.550781 17 9 16.328125 9 15.5 C 9 14.671875 8.550781 14 8 14 Z M 16 14 C 15.449219 14 15 14.671875 15 15.5 C 15 16.328125 15.449219 17 16 17 C 16.550781 17 17 16.328125 17 15.5 C 17 14.671875 16.550781 14 16 14 Z"></path>-->
+            <!--                </svg>-->
+            <!--            </a>-->
+            <li><a id="feedback" class="mdui-btn mdui-btn-icon waves-effect tooltipped"
+                   data-tooltip="反馈">
+                <i class="mdui-icon material-icons">feedback</i></a>
+            </li>
+            <li><a id="about-us" class="mdui-btn mdui-btn-icon waves-effect tooltipped"
+                   data-tooltip="关于我们">
+                <i class="mdui-icon material-icons">info</i></a>
+            </li>
+        </ul>
     </div>
+</nav>
 
-    <!-- 模态框 -->
-    <div class="modal fade" id="startmodal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-
-                <!-- 模态框头部 -->
-                <div class="modal-header">
-                    <h4 class="modal-title">CNValues测试说明</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                <!-- 模态框主体 -->
-                <div class="modal-body">
-                    <p class="card-text">你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法。如果犹豫不决，请跟着你的第一感觉选择。</p>
-                    <p class="card-text">
-                        <strong>注意：</strong>为了保证本测试的区分度，<font color="#FF0000">可能会出现高度偏激或有冒犯性的内容</font>，测试题目并不代表制作者的观点。</p>
-                    <p class="card-text"><strong>隐私声明：</strong>我们不会收集您的个人信息。</p>
-                </div>
-
-                <!-- 模态框底部 -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="location.href='quiz.html'">知道了！</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">等等，还是算了！</button>
-                </div>
-
-            </div>
-        </div>
+<main class="container">
+    <h1 class="header center orange-text">CN Values</h1>
+    <div class="center">
+        <h5>CN Values 是一个基于 8Values 的在中国语境下的娱乐站队测试。</h5><br>
+        你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法，请跟着您的第一感觉选择。<br><br>
+        本测试主要考量中国大陆社会环境，在此基础上尽可能考量港台及海外华人情况。<br><br>
+        <strong>注意：为了保证本测试的区分度，<span style="color: #FF0000; ">可能会出现高度偏激或有冒犯性的内容</span>，题目并不代表制作者的观点。</strong><br><br>
+        <strong>隐私声明：</strong>我们不会收集您的任何个人信息。
+        <br><br><br>
     </div>
+    <div class="row center">
+        <a href="quiz.html" class="btn-large waves-effect">Get Started</a>
+    </div>
+</main>
 
+<footer class="page-footer teal">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-6 offset-lg-3">受<strong><a
-                        href="https://8values.github.io/">8Values</a></strong>、<strong><a
-						href="https://leftvalues.github.io/">LeftValues</a></strong>、<strong><a
-						href="https://rightvaluestest.github.io/">RightValues</a></strong>、<strong><a
-                        href="https://www.politiscales.net/">PolitiScales</a></strong>、<strong><a
-						href="https://politicalcompass.org/">Political Compass</a></strong>、<strong><a
-                        href="https://zuobiao.me/">北大未名版中国政治坐标系测试</a></strong>和<strong><a
-                        href="https://yavt.fengtao.xyz/">Yet Another Values Test</a></strong>启发
-            </div>
-            <hr>
+        <h6>本政治测试受以下测试启发完成：</h6>
+        <ul>
+            <li>
+                <a href="https://8values.github.io/" class="white-text">8Values</a>
+            </li>
+            <li>
+                <a href="https://leftvalues.github.io/" class="white-text">LeftValues</a>
+            </li>
+            <li>
+                <a href="https://rightvaluestest.github.io/" class="white-text">RightValues</a>
+            </li>
+            <li>
+                <a href="https://www.politiscales.net/" class="white-text">PolitiScales</a>
+            </li>
+            <li>
+                <a href="https://zuobiao.me/" class="white-text">北大未名版中国政治坐标系测试</a>
+            </li>
+            <li>
+                <a href="https://yavt.fengtao.xyz/" class="white-text">Yet Another Values Test</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by CN Values Team
         </div>
     </div>
+</footer>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery-3.4.1.min.js"></script>
-
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap-4.4.1.js"></script>
-        <script type="text/javascript">
-            $.ajax({
-                type: "GET",
-                url: "info/version.json",
-                dataType: "json",
-                success: function (data) {
-                    $("#version").html("版本号：" + data.version);
-                    Version = data.version;
-                }
-            });
-        </script>
 </body>
 
 </html>

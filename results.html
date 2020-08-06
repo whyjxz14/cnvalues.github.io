@@ -1,408 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
+    <title>CN Values result</title>
+    <link rel="icon" href="icon.png">
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>CNValues结果</title>
-    <script type="application/javascript" src="ideologies.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--js-->
+    <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.staticfile.org/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.staticfile.org/mdui/1.0.0/js/mdui.min.js"></script>
+    <script src="info/ideologies.js"></script>
+    <script src="js/results.js"></script>
+    <script src="js/version.js"></script>
 
-    <!--icon-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.bootcdn.net/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/mdui/1.0.0/css/mdui.min.css">
+    <link rel="stylesheet" href="css/results.css">
 </head>
 
 <body>
-    <nav>
-        <a id="version" href="#"></a>
-        <a href="index.html">再来一遍</a>
-        <a href="#">Gitlab</a>
-        <a href="#">反馈</a>
-		<a href="#">关于我们</a>
-    </nav>
 
 
-    <div class="container">
+<nav class="teal">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="index.html" class="brand-logo left">CN Values</a>
+        <ul class="right">
+            <li id="version"></li>
+            <!--            <li><a id="github" class="mdui-btn mdui-btn-icon waves-effect tooltipped"-->
+            <!--                   data-tooltip="Github">-->
+            <!--                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"-->
+            <!--                     width="24" height="24"-->
+            <!--                     viewBox="0 0 24 24"-->
+            <!--                     style="fill:#FFFFFF;">-->
+            <!--                    <path d="M 4.0625 4 C 4.0625 4 3.53125 4.925781 3.53125 6.5 C 3.53125 7.546875 3.765625 8.125 3.9375 8.40625 C 2.734375 9.660156 2 11.347656 2 13.53125 C 2 19.125 5.527344 21 12 21 C 18.472656 21 22 19.125 22 13.53125 C 22 11.269531 21.304688 9.574219 20.15625 8.34375 C 20.441406 7.488281 20.769531 5.871094 19.96875 4 C 17.582031 4 15.570313 5.839844 15.5 5.90625 C 14.386719 5.660156 13.210938 5.53125 12 5.53125 C 10.761719 5.53125 9.542969 5.6875 8.40625 5.96875 C 6.808594 4.378906 4.886719 4 4.0625 4 Z M 15.21875 12 C 15.820313 11.992188 16.386719 12.054688 16.875 12.21875 C 18.179688 12.660156 19 13.945313 19 15.375 C 18.996094 19.339844 16.996094 20 11.875 20 C 8.066406 20 4.96875 19.285156 4.96875 15.5 C 4.96875 14.054688 5.71875 13.226563 6.25 12.71875 C 7.417969 11.601563 9.257813 12.15625 11.875 12.15625 C 13.0625 12.15625 14.214844 12.011719 15.21875 12 Z M 8 14 C 7.449219 14 7 14.671875 7 15.5 C 7 16.328125 7.449219 17 8 17 C 8.550781 17 9 16.328125 9 15.5 C 9 14.671875 8.550781 14 8 14 Z M 16 14 C 15.449219 14 15 14.671875 15 15.5 C 15 16.328125 15.449219 17 16 17 C 16.550781 17 17 16.328125 17 15.5 C 17 14.671875 16.550781 14 16 14 Z"></path>-->
+            <!--                </svg>-->
+            <!--            </a>-->
+            <li><a id="feedback" class="mdui-btn mdui-btn-icon waves-effect tooltipped"
+                   data-tooltip="反馈">
+                <i class="mdui-icon material-icons">feedback</i></a>
+            </li>
+            <li><a id="about-us" class="mdui-btn mdui-btn-icon waves-effect tooltipped"
+                   data-tooltip="关于我们">
+                <i class="mdui-icon material-icons">info</i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-        <div class="card mt-3">
-            <div class="card-title">
-                <h2 class="text-center">
-                    CNValues结果
-                </h2>
-
-            </div>
-            <hr />
-            <div class="card-body">
-                <ul class="list-unstyled">
-                    <li class="ax">
-                        <div class="row">
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-equality" src="value_images/balance.svg"
-                                                height="50pt"></span>
-                                        <span class="wenzi">平等 </span>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <h2>经济: <span class="weight-300" id="economic-label"></span></h2>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="text-wrapper" id="equality"></div>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <div class="text-wrapper" id="wealth"></div>
-                                    </div>
-                                </div>
-                                <div class="progress" style="height: 25px" ;>
-
-                                    <div class="progress-bar bg-danger progress-bar-animated" role="progressbar"
-                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-                                        id="bar-equality">
-                                    </div>
-
-                                    <div class="progress-bar" role="progressbar" id="bar-wealth" style="width: 50%"
-                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-wealth" src="value_images/money.png" height="50pt"></span>
-                                        <span class="wenzi">市场</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li class="ax">
-                        <div class="row">
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-liberty" src="value_images/paper-plane (1).png"
-                                                height="50pt"></span>
-                                        <span class="wenzi">自由</span>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <h2>政治: <span class="weight-300" id="state-label"></span></h2>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="text-wrapper" id="liberty"></div>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <div class="text-wrapper" id="authority"></div>
-                                    </div>
-                                </div>
-                                <div class="progress" style="height: 25px" ;>
-
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
-                                        id="bar-liberty" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-
-                                    </div>
-
-                                    <div class="progress-bar bg-info" role="progressbar" id="bar-authority"
-                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-authority" src="value_images/emperor.png"
-                                                height="50pt"></span>
-                                        <span class="wenzi">权威</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li class="ax">
-                        <div class="row">
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-progress" src="value_images/atom.png" height="50pt"></span>
-                                        <span class="wenzi">进步</span>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <h2>社会: <span class="weight-300" id="society-label"></span></h2>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="text-wrapper" id="progress"></div>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <div class="text-wrapper" id="tradition"></div>
-                                    </div>
-                                </div>
-                                <div class="progress" style="height: 25px" ;>
-                                    <div class="progress-bar bg-success" role="progressbar" id="bar-progress"
-                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-
-                                    </div>
-
-                                    <div class="progress-bar bg-info" role="progressbar" id="bar-tradition"
-                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-tradition" src="value_images/fengshui.png"
-                                                height="50pt"></span>
-                                        <span class="wenzi">传统</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <li class="ax">
-                        <div class="row">
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-ecology" src="value_images/garden.png"
-                                                height="50pt"></span>
-                                        <span class="wenzi">生态</span>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <h2>环境: <span class="weight-300" id="environment-label"></span></h2>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="text-wrapper" id="ecology"></div>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <div class="text-wrapper" id="production"></div>
-                                    </div>
-                                </div>
-                                <div class="progress" style="height: 25px" ;>
-
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
-                                        id="bar-ecology" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-
-                                    </div>
-
-                                    <div class="progress-bar bg-info" role="progressbar" id="bar-production"
-                                        style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="wrapper">
-                                    <a href="#">
-                                        <span class="picture p2"><img id="img-production" src="value_images/factory.png"
-                                                height="50pt"></span>
-                                        <span class="wenzi">生产</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                    </li>
-                    <!-- 更多轴
-<li class="ax">
-						<div class="row">
-							<div class="col-2">
-								<div class="wrapper">
-									<a href="#">
-										<span class="picture p2"><img src="图标绝对路径"
-												height="50pt"></span>
-										<span class="wenzi"> 文字 </span>
-									</a>
-
-								</div>
-							</div>
-							<div class="col-8">
-								<h2>描述: <span class="weight-300" id="economic-label"></span></h2>
-								<div class="row">
-									<div class="col-6">
-										<div class="text-wrapper" id="左百分比jsid"></div>
-									</div>
-									<div class="col-6 text-right">
-										<div class="text-wrapper" id="右百分比jsid"></div>
-									</div>
-								</div>
-								<div class="progress" style="height: 25px" ;>
-
-									<div class="progress-bar bg-danger progress-bar-animated" role="progressbar" style="width: 50%"
-										aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" id="bar-jsid左">
-									</div>
-
-									<div class="progress-bar" role="progressbar" id="bar-jsid右"
-										style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-									</div>
-								</div>
-							</div>
-							<div class="col-2">
-								<div class="wrapper">
-									<a href="#">
-										<span class="picture p2"><img src="图标绝对路径" height="50pt"></span>
-										<span class="wenzi">文字</span>
-									</a>
-								</div>
-							</div>
-						</div>
-						<hr />
-					</li>
--->
-                </ul>
-                <div class="row">
-                    <div class="col-6">
-                        <h2>最接近的意识形态：<h4 id="ideology-label">
-                            </h4>
-                        </h2>
+<main class="container row equal-height-row">
+    <div class="col xl6 l6 m12 s12 equal-height-col">
+        <div class="card hoverable equal-height-inner">
+            <div class="card-content">
+                <div class="center card-title">CN Values 测试结果</div>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/balance.svg" alt="平等">
+                        <br><span>平等</span>
                     </div>
-                    <div class="col-6">
-                        <div class="wrapper text-center">
-                            <button type="button" data-toggle="modal" data-target="#share" id="showImg"
-                                style=" width:60px;height:60px;border-radius: 50%" class="btn btn-primary ml-1"><span
-                                    style="text-align: center;" class="material-icons">
-                                    share
-                                </span></button>
-                            <h5 style="color: slategray;margin-top: 8px; font-size: small;">分享结果</h5>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-labelledby="share"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-
-                                    <div class="modal-body">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        <!-- TODO -->
-                                        <div class="t">分享</div>
-                                        <div class="dw" id="dw"><img id="shows" style="margin-right: 0; height: auto; width: 100%;"></div>
-                                        <a class="down" href="" download="downImg">>save picture</a>
-                                        <a href="url" id="url">
-                                            <!-- TODO -->
-                                        </a>
-                                        <img id="mytest">
-                                        <button onclick="getimg()"></button>
-                                        <canvas></canvas>
-
-
-                                    </div>
-
-
-                                </div>
-                            </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-equality" class="left">50%</span>
+                        <span id="label-econ" class="center"></span>
+                        <span id="percent-market" class="right">50%</span>
+                        <br>
+                        <div class="progress yellow">
+                            <div id="bar-equality" class="determinate red" style="width: 50%"></div>
                         </div>
                     </div>
-
-
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/money.png" alt="市场">
+                        <br><span>市场</span>
+                    </div>
                 </div>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/paper-plane%20(1).png" alt="自由">
+                        <br><span>自由</span>
+                    </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-liberty" class="left">50%</span>
+                        <span id="label-govt" class="center"></span>
+                        <span id="percent-authority" class="right">50%</span>
+                        <br>
+                        <div class="progress brown">
+                            <div id="bar-liberty" class="determinate blue" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/emperor.png" alt="权威">
+                        <br><span>权威</span>
+                    </div>
+                </div>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/atom.png" alt="进步">
+                        <br><span>进步</span>
+                    </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-progress" class="left">50%</span>
+                        <span id="label-scty" class="center"></span>
+                        <span id="percent-tradition" class="right">50%</span>
+                        <br>
+                        <div class="progress orange">
+                            <div id="bar-progress" class="determinate purple" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/fengshui.png" alt="传统">
+                        <br><span>传统</span>
+                    </div>
+                </div>
+                <div class="collection-item row center">
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/garden.png" alt="生态">
+                        <br><span>生态</span>
+                    </div>
+                    <div class="col xl8 l8 m8 s8">
+                        <span id="percent-ecology" class="left">50%</span>
+                        <span id="label-envo" class="center"></span>
+                        <span id="percent-production" class="right">50%</span>
+                        <br>
+                        <div class="progress grey">
+                            <div id="bar-ecology" class="determinate green" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="col xl2 l2 m2 s2 no-padding">
+                        <img src="value_images/factory.png" alt="生产">
+                        <br><span>生产</span>
+                    </div>
+                </div>
+                <!--                <div id="special-row" class="collection-item row center"-->
+                <!--                     style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center">-->
+                <!--                    <div class="col xl2 l2 m2 s2 no-padding">-->
+                <!--                        <img src="value_images/balance.svg" alt="平等">-->
+                <!--                        <br><span>平等</span>-->
+                <!--                    </div>-->
+                <!--                    <div class="col xl2 l2 m2 s2 no-padding">-->
+                <!--                        <img src="value_images/balance.svg" alt="平等">-->
+                <!--                        <br><span>平等</span>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <h5 class="center">最接近的意识形态：<span id="ideology-label"></span></h5>
             </div>
         </div>
     </div>
+    <div class="col xl6 l6 m12 s12 equal-height-col">
+        <div class="card grey lighten-3 hoverable equal-height-inner">
+            <div class="card-content">
+                <p id="ideology-label2" class="card-title center"></p>
+                <p id="ideology-desc" class="flow-text"></p>
+                <br>
+                <a id="ideology-link" class="flow-text"></a>
+            </div>
+        </div>
     </div>
+</main>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <!--javascript function-->
-    <script type="application/javascript" src="results.js">
+<div id="test-again" class="fixed-action-btn">
+    <a class="btn-floating btn-large green tooltipped" data-position="left" data-tooltip="重新测试" href="quiz.html">
+        <i class="large material-icons">refresh</i>
+    </a>
+</div>
 
-    </script>
+<div class="fixed-action-btn">
+    <a id="share" class="btn-floating btn-large red">
+        <i class="large material-icons">share</i>
+    </a>
+    <ul>
+        <li><a id="show-img" class="btn-floating red redtooltipped"
+               data-tooltip="下载截图"><i class="material-icons">get_app</i></a></li>
+        <li><a id="share-twitter" class="btn-floating blue"><i class="material-icons">twitter</i></a></li>
+        <li><a id="share-facebook" class="btn-floating indigo"><i class="material-icons">facebook</i></a></li>
+    </ul>
+</div>
 
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="application/javascript" src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-
-    <script type="text/javascript" src="js/image.js"></script>
-    <script type="text/javascript">
-        var Version = "";
-        $.ajax({
-            type: "GET",
-            url: "info/version.json",
-            dataType: "json",
-            success: function (data) {
-                $("#version").html("版本号：" + data.version);
-                Version = data.version;
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        $("#showImg").click(function () {
-            var imageBuilder = new ImageBuilder(); // 实例化图片构造器
-            imageBuilder.line.width = 1000; // 设置每行宽度
-            imageBuilder.line.height = 300; // 设置每行高度
-            imageBuilder.barDistance = 25; // 设置Bar到图标的距离
-            imageBuilder.bar.height = 50; // 设置Bar的高度
-            // 填充图像数据
-            imageBuilder.imgs = [
-                [
-                    $("#img-equality")[0],
-                    $("#img-wealth")[0],
-                ],
-                [
-                    $("#img-liberty")[0],
-                    $("#img-authority")[0],
-                ],
-                [
-                    $("#img-progress")[0],
-                    $("#img-tradition")[0],
-                ],
-                [
-                    $("#img-ecology")[0],
-                    $("#img-production")[0],
-                ],
-            ];
-            // 填充Bar颜色数据
-            imageBuilder.colors = [
-                ["#f44336", "#007bff"],
-                ["#ff9800", "#03a9f4"],
-                ["#ffeb3b", "#3f51b5"],
-                ["#8bc34a", "#9c27b0"],
-            ];
-            // 填充政治坐标轴倾向数据
-            imageBuilder.texts = [
-                "经济: " + $("#economic-label").html(),
-                "政治: " + $("#state-label").html(),
-                "社会: " + $("#society-label").html(),
-                "环境: " + $("#environment-label").html(),
-            ];
-            // 填充Bar百分比数据
-            imageBuilder.barData = [
-                [equality, wealth],
-                [liberty, authority],
-                [progress, tradition],
-                [ecology, production]
-            ];
-            imageBuilder.ideology = ideology; // 设置意识形态数据
-            imageBuilder.version = Version;
-            imageBuilder.getImg(); // 绘制图片
-            // 展示图片
-            $("#shows")[0].src = imageBuilder.canvas.toDataURL(
-                "image/png"
-            );
-        });
-    </script>
 </body>
 
 </html>
