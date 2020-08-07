@@ -17,11 +17,3 @@ main {
     flex-direction: column;
     width: 100%;
 }
-
-#question-card {
-    min-height: 13rem;
-}
-
-#version {
-    padding-right: 1rem;
-}

@@ -29,19 +29,3 @@ img {
 #special-row div {
     margin: 0;
 }
-
-#ideology-desc {
-    text-indent: 2em;
-}
-
-#ideology-link {
-    word-break: break-all;
-}
-
-#test-again {
-    right: 90px;
-}
-
-#version {
-    padding-right: 1rem;
-}
