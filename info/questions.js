@@ -27,7 +27,7 @@ questions = [
         }
     },
     {
-        "question": "一切国家都不应当继续存在。",
+        "question": "一切形式的国家都应当立刻被废除。",
         "effect": {
             "econ": 0,
             "govt": 15,
@@ -90,7 +90,7 @@ questions = [
         }
     },
     {
-        "question": "我愿意让渡部分个人自由与权利来帮助打击恐怖主义（如加强机场安检）。",
+        "question": "我愿意让渡部分个人自由与权利来帮助国家打击恐怖主义（如加强机场安检）。",
         "effect": {
             "econ": 0,
             "govt": -10,
@@ -103,15 +103,6 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": -10,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-    {
-        "question": "大麻应当合法化。",
-        "effect": {
-            "econ": 0,
-            "govt": 10,
             "scty": 0,
             "envo": 0
         }
@@ -130,15 +121,6 @@ questions = [
         "effect": {
             "econ": 0,
             "govt": -5,
-            "scty": 0,
-            "envo": 0
-        }
-    },
-    {
-        "question": "中国网络平台的封号和删帖是互联网企业自身的行为，与政府无关。",
-        "effect": {
-            "econ": 0,
-            "govt": -10,
             "scty": 0,
             "envo": 0
         }
@@ -198,7 +180,7 @@ questions = [
         }
     },
     {
-        "question": "废除警察和军队，以私人安保公司/民兵组织来维持治安是可行的。",
+        "question": "废除警察和军队，以私人安保公司/民兵组织来维持治安和防卫是可行的。",
         "effect": {
             "econ": 0,
             "govt": 10,
@@ -207,7 +189,16 @@ questions = [
         }
     },
     {
-        "question": "若没有政府的治理，社会将陷入混乱。",
+        "question": "国家应捍卫自己的利益和价值观，必要时不排除使用武力。",
+        "effect": {
+            "econ": 0,
+            "govt": -10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
+        "question": "现在若没有国家机器的治理，社会将陷入混乱。",
         "effect": {
             "econ": 0,
             "govt": -15,
@@ -432,9 +423,9 @@ questions = [
         }
     },
     {
-        "question": "经济全球化下，全世界劳动者的权益更加紧密地联系在一起。",
+        "question": "「全世界无产者联合起来」已经过时了。",
         "effect": {
-            "econ": 10,
+            "econ": -10,
             "govt": 0,
             "scty": 0,
             "envo": 0
@@ -540,7 +531,7 @@ questions = [
         }
     },
     {
-        "question": "死刑最终应当被废除。",
+        "question": "死刑应当被废除。",
         "effect": {
             "econ": 0,
             "govt": 0,
@@ -612,6 +603,24 @@ questions = [
         }
     },
     {
+        "question": "性侵犯一定程度上是由男性的本能冲动导致的。",
+        "effect": {
+            "econ": 0,
+            "govt": 0,
+            "scty": -10,
+            "envo": 0
+        }
+    },
+    {
+        "question": "大麻应当合法化。",
+        "effect": {
+            "econ": 0,
+            "govt": 10,
+            "scty": 0,
+            "envo": 0
+        }
+    },
+    {
         "question": "学校应当多传授我们的价值观和传统。",
         "effect": {
             "econ": 0,
@@ -630,15 +639,6 @@ questions = [
         }
     },
     {
-        "question": "性侵犯一定程度上是由男性的本能冲动导致的。",
-        "effect": {
-            "econ": 0,
-            "govt": 0,
-            "scty": -10,
-            "envo": 0
-        }
-    },
-    {
         "question": "没有祖国，你什么都不是。",
         "effect": {
             "econ": 0,
@@ -648,7 +648,7 @@ questions = [
         }
     },
     {
-        "question": "国家和地区之间的边界最终应当被废除。",
+        "question": "国家和地区之间的边界应当被废除。",
         "effect": {
             "econ": 0,
             "govt": 0,

@@ -156,7 +156,7 @@ ideologies = [
             "govt": 55,
             "scty": 60
         },
-        "desc": NaN,
+        "desc": "自由主义是以公民自由为基础的意识形态，主张政府的统治需要经法定秩序得到公民同意，以及保护自由贸易和个人权利。",
         "link": "https://en.wikipedia.org/wiki/Liberalism"
     },
     {
@@ -166,7 +166,7 @@ ideologies = [
             "govt": 25,
             "scty": 20
         },
-        "desc": NaN,
+        "desc": "右翼民粹主义反对建制派精英，同时反国际化，支持严格管控移民，它位于这个时代政治讨论的中心。",
         "link": "https://en.wikipedia.org/wiki/Right-wing_populism"
     },
     {
@@ -206,7 +206,7 @@ ideologies = [
             "govt": 55,
             "scty": 50
         },
-        "desc": NaN,
+        "desc": "新自由主义主张大规模的私有化和缩小政府，同时在外交方面依靠政府组建贸易同盟和对敌经济制裁来保证自由主义的影响力。",
         "link": "https://en.wikipedia.org/wiki/Neoliberalism"
     },
     {
@@ -226,7 +226,7 @@ ideologies = [
             "govt": 15,
             "scty": 30
         },
-        "desc": NaN,
+        "desc": "威权资本主义是威权体制下的资本主义市场经济，限制个人的自由和政治权利，其政府通常长期由一党领导。",
         "link": "https://en.wikipedia.org/wiki/Authoritarian_capitalism"
     },
     {
@@ -236,7 +236,7 @@ ideologies = [
             "govt": 30,
             "scty": 25
         },
-        "desc": NaN,
+        "desc": "新保守主义认为民主自由来源于国家传统，因而主张激进地压制文化左翼，捍卫传统，构建爱国主义，制裁国际反民主势力。",
         "link": "https://en.wikipedia.org/wiki/Neoconservatism"
     },
     {
@@ -246,7 +246,7 @@ ideologies = [
             "govt": 60,
             "scty": 50
         },
-        "desc": NaN,
+        "desc": "古典自由主义强调法治下的公民自由，特别是经济自由，它主张自由放任的经济政策，并认为政府的职能在于保护这些自由。",
         "link": "https://en.wikipedia.org/wiki/Classical_liberalism"
     },
     {
@@ -266,7 +266,7 @@ ideologies = [
             "govt": 85,
             "scty": 50
         },
-        "desc": NaN,
+        "desc": "最小政府主义主张政府的唯一功能是通过军警和法院来捍卫互不侵犯原则，从而保护公民免遭侵略、盗窃、违约、欺诈并强制执行财产法。",
         "link": "https://en.wikipedia.org/wiki/Night-watchman_state"
     }
 ];
