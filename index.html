@@ -52,18 +52,28 @@
 </nav>
 
 <main class="container">
-    <h1 class="header center orange-text">CN Values</h1>
-    <div class="center">
-        <h5>CN Values 是一个基于 8Values 的在中国语境下的娱乐站队测试。</h5><br>
-        你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法。<br><br>
-        若摇摆不定，请跟着您的第一感觉走。若对某道题难以理解，可试着思考题目叙述的对立面。<br><br>
-        本测试以中国大陆社会环境为背景，所考虑的情况为题目编写时的“当下”，请在测试时注意这一点。<br><br>
-        <strong>声明：为了保证本测试的区分度，<span style="color: #FF0000; ">可能会出现高度偏激或有冒犯性的内容</span>，题目并不代表制作者的观点。</strong><br><br>
-        <strong>隐私声明：</strong>我们不会收集您的任何个人信息。
-        <br><br><br>
+    <h1 class="header center orange-text" style="font-size: 4em">CN Values</h1>
+    <h5 class="header center light">CN Values 是一个基于 8Values 的在中国语境下的娱乐站队测试</h5>
+
+    <div id="start-modal" class="modal">
+        <div class="modal-content">
+            <h4>注意</h4>
+            你将会看到一系列观点，请点击对应按钮选择你对于每个观点的看法。<br><br>
+            若摇摆不定，请跟着您的第一感觉走。若对某道题难以理解，可试着思考题目叙述的对立面。<br><br>
+            本测试以中国大陆社会环境为背景，所考虑的情况为题目编写时的“当下”，请在测试时注意这一点。<br><br>
+            <strong>声明：为了保证本测试的区分度，<span
+                    style="color: #FF0000; ">可能会出现高度偏激或有冒犯性的内容</span>，题目并不代表制作者的观点。</strong><br><br>
+            <strong>隐私声明：</strong>我们不会收集您的任何个人信息。
+        </div>
+        <div class="modal-footer">
+            <a href="quiz.html" class="btn-flat waves-effect waves-teal">开始</a>
+            <a class="btn-flat modal-close waves-effect waves-teal">取消</a>
+        </div>
     </div>
+
+    <br><br><br>
     <div class="row center">
-        <a href="quiz.html" class="btn-large waves-effect">点击开始</a>
+        <a href="#start-modal" class="btn-large waves-effect modal-trigger">点击开始</a>
     </div>
 </main>
 

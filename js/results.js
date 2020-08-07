@@ -9,6 +9,7 @@ $(document).ready(() => {
 
     $('.fixed-action-btn').floatingActionButton();
     $('.tooltipped').tooltip();
+    $('.modal').modal();
 
     function get_label(val, ary) {
         if (val > 100) {
