@@ -63,7 +63,7 @@ questions = [
         }
     },
     {
-        "question": "任何挑战国家主权和社会稳定的言论，不属于言论自由的范畴。",
+        "question": "挑战国家主权和社会稳定的言论，不属于言论自由的范畴。",
         "effect": {
             "econ": 0,
             "govt": -10,
@@ -615,8 +615,8 @@ questions = [
         "question": "大麻应当合法化。",
         "effect": {
             "econ": 0,
-            "govt": 10,
-            "scty": 0,
+            "govt": 0,
+            "scty": 10,
             "envo": 0
         }
     },

@@ -110,7 +110,7 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/National_Bolshevism"
     },
     {
-        "name": "互助主义",
+        "name": "无政府互助主义",
         "stats": {
             "econ": 60,
             "govt": 100,
@@ -186,7 +186,7 @@ ideologies = [
             "govt": 100,
             "scty": 60
         },
-        "desc": NaN,
+        "desc": "个人无政府主义者是自然法的忠实信徒，他们认为整个社会本身源自契约，并且个人有权利脱离一切契约，即脱离社会。",
         "link": "https://en.wikipedia.org/wiki/Individualist_anarchism"
     },
     {
@@ -196,7 +196,7 @@ ideologies = [
             "govt": 80,
             "scty": 60
         },
-        "desc": NaN,
+        "desc": "自由意志主义主张外交上的孤立主义与经济上的充分放任，强调伦理正当性而非功利，以及对军警等国家暴力的抗拒。",
         "link": "https://en.wikipedia.org/wiki/Libertarianism"
     },
     {
@@ -216,7 +216,7 @@ ideologies = [
             "govt": 40,
             "scty": 30
         },
-        "desc": NaN,
+        "desc": "保守主义源于法国大革命的反对派，它推崇传统的宗教价值、政治体制与财产分配，意在维护社会稳定和延续。",
         "link": "https://en.wikipedia.org/wiki/Conservatism"
     },
     {
