@@ -10,16 +10,6 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Anarcho-communism"
     },
     {
-        "name": "托洛茨基主义",
-        "stats": {
-            "econ": 100,
-            "govt": 50,
-            "scty": 90
-        },
-        "desc": "托洛茨基主义坚持布尔什维克革命初期宣告的工人民主和国际主义原则，强烈反对官僚化和一国社会主义论。",
-        "link": "https://en.wikipedia.org/wiki/Trotskyism"
-    },
-    {
         "name": "正统马克思主义",
         "stats": {
             "econ": 100,
@@ -28,6 +18,16 @@ ideologies = [
         },
         "desc": "正统马克思主义坚持激进的社会主义革命的必要性，同时强调社会主义民主和政治自由，反对改良主义和官僚化的集中制。",
         "link": "https://en.wikipedia.org/wiki/Orthodox_Marxism"
+    },
+    {
+        "name": "托洛茨基主义",
+        "stats": {
+            "econ": 100,
+            "govt": 50,
+            "scty": 90
+        },
+        "desc": "托洛茨基主义坚持布尔什维克革命初期宣告的工人民主和国际主义原则，强烈反对官僚化和一国社会主义论。",
+        "link": "https://en.wikipedia.org/wiki/Trotskyism"
     },
     {
         "name": "列宁主义",
@@ -73,7 +73,7 @@ ideologies = [
         "name": "左翼自由意志主义",
         "stats": {
             "econ": 70,
-            "govt": 80,
+            "govt": 90,
             "scty": 80
         },
         "desc": "左翼自由意志主义在坚持自由意志主义的同时抵制资本主义的私有制和雇佣劳动，尤其反对私人占有自然资源。",
@@ -130,16 +130,6 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Social_liberalism"
     },
     {
-        "name": "纳粹主义",
-        "stats": {
-            "econ": 50,
-            "govt": 0,
-            "scty": 10
-        },
-        "desc": "纳粹主义是法西斯主义的形式之一，推崇种族主义，并且比一般的法西斯主义更加倾向于国家统辖经济。",
-        "link": "https://en.wikipedia.org/wiki/Nazism"
-    },
-    {
         "name": "基督教民主主义",
         "stats": {
             "econ": 50,
@@ -150,6 +140,16 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Christian_democracy"
     },
     {
+        "name": "纳粹主义",
+        "stats": {
+            "econ": 50,
+            "govt": 0,
+            "scty": 10
+        },
+        "desc": "纳粹主义是法西斯主义的形式之一，推崇种族主义，并且比一般的法西斯主义更加倾向于国家统辖经济。",
+        "link": "https://en.wikipedia.org/wiki/Nazism"
+    },
+    {
         "name": "自由主义",
         "stats": {
             "econ": 45,
@@ -158,6 +158,16 @@ ideologies = [
         },
         "desc": "自由主义是以公民自由为基础的意识形态，主张政府的统治需要经法定秩序得到公民同意，以及保护自由贸易和个人权利。",
         "link": "https://en.wikipedia.org/wiki/Liberalism"
+    },
+    {
+        "name": "个人无政府主义",
+        "stats": {
+            "econ": 40,
+            "govt": 100,
+            "scty": 60
+        },
+        "desc": "个人无政府主义者是自然法的忠实信徒，他们认为整个社会本身源自契约，并且个人有权利脱离一切契约，即脱离社会。",
+        "link": "https://en.wikipedia.org/wiki/Individualist_anarchism"
     },
     {
         "name": "右翼民粹主义",
@@ -180,20 +190,10 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Fascism"
     },
     {
-        "name": "个人无政府主义",
-        "stats": {
-            "econ": 30,
-            "govt": 100,
-            "scty": 60
-        },
-        "desc": "个人无政府主义者是自然法的忠实信徒，他们认为整个社会本身源自契约，并且个人有权利脱离一切契约，即脱离社会。",
-        "link": "https://en.wikipedia.org/wiki/Individualist_anarchism"
-    },
-    {
         "name": "自由意志主义",
         "stats": {
             "econ": 30,
-            "govt": 80,
+            "govt": 90,
             "scty": 60
         },
         "desc": "自由意志主义主张外交上的孤立主义与经济上的充分放任，强调伦理正当性而非功利，以及对军警等国家暴力的抗拒。",
@@ -220,16 +220,6 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Conservatism"
     },
     {
-        "name": "威权资本主义",
-        "stats": {
-            "econ": 20,
-            "govt": 15,
-            "scty": 30
-        },
-        "desc": "威权资本主义是威权体制下的资本主义市场经济，限制个人的自由和政治权利，其政府通常长期由一党领导。",
-        "link": "https://en.wikipedia.org/wiki/Authoritarian_capitalism"
-    },
-    {
         "name": "新保守主义",
         "stats": {
             "econ": 20,
@@ -240,10 +230,20 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Neoconservatism"
     },
     {
+        "name": "威权资本主义",
+        "stats": {
+            "econ": 20,
+            "govt": 15,
+            "scty": 30
+        },
+        "desc": "威权资本主义是威权体制下的资本主义市场经济，限制个人的自由和政治权利，其政府通常长期由一党领导。",
+        "link": "https://en.wikipedia.org/wiki/Authoritarian_capitalism"
+    },
+    {
         "name": "古典自由主义",
         "stats": {
             "econ": 15,
-            "govt": 60,
+            "govt": 65,
             "scty": 50
         },
         "desc": "古典自由主义强调法治下的公民自由，特别是经济自由，它主张自由放任的经济政策，并认为政府的职能在于保护这些自由。",
