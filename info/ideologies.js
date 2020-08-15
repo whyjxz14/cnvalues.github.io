@@ -70,16 +70,6 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Democratic_socialism"
     },
     {
-        "name": "左翼自由意志主义",
-        "stats": {
-            "econ": 70,
-            "govt": 90,
-            "scty": 80
-        },
-        "desc": "左翼自由意志主义（Left-Libertarianism）在坚持自由意志主义的同时抵制资本主义的私有制和雇佣劳动，尤其反对私人占有自然资源。",
-        "link": "https://en.wikipedia.org/wiki/Left-libertarianism"
-    },
-    {
         "name": "社会民主主义",
         "stats": {
             "econ": 70,
@@ -112,12 +102,22 @@ ideologies = [
     {
         "name": "无政府互助主义",
         "stats": {
-            "econ": 60,
+            "econ": 65,
             "govt": 100,
             "scty": 60
         },
         "desc": "无政府互助主义（Mutualism）主张在自由市场的框架下将生产资料的使用权社会化，同时反对资本主义雇佣劳动。",
         "link": "https://en.wikipedia.org/wiki/Mutualism_(economic_theory)"
+    },
+    {
+        "name": "左翼自由意志主义",
+        "stats": {
+            "econ": 60,
+            "govt": 90,
+            "scty": 80
+        },
+        "desc": "左翼自由意志主义（Left-Libertarianism）在坚持自由意志主义的同时抵制资本主义的私有制和雇佣劳动，尤其反对私人占有自然资源。",
+        "link": "https://en.wikipedia.org/wiki/Left-libertarianism"
     },
     {
         "name": "社会自由主义",
@@ -148,16 +148,6 @@ ideologies = [
         },
         "desc": "纳粹主义（Nazism）是法西斯主义的形式之一，推崇种族主义，并且比一般的法西斯主义更加倾向于国家统辖经济。",
         "link": "https://en.wikipedia.org/wiki/Nazism"
-    },
-    {
-        "name": "自由主义",
-        "stats": {
-            "econ": 45,
-            "govt": 55,
-            "scty": 60
-        },
-        "desc": "自由主义（Liberalism）是以公民自由为基础的意识形态，主张政府的统治需要经法定秩序得到公民同意，以及保护自由贸易和个人权利。",
-        "link": "https://en.wikipedia.org/wiki/Liberalism"
     },
     {
         "name": "个人无政府主义",
