@@ -1,3 +1,1 @@
-specials = [
-
-];
+specials = [];

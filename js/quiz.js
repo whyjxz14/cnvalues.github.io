@@ -1,43 +1,44 @@
-$(document).ready(function () {  // Use closure, no globals
-    let scores;
+$(document).ready(function () {
+
+    let choices;
     let current_question = 0;
 
     initialize();
     $('.tooltipped').tooltip();
 
     function initialize() {
-        scores = new Array(questions.length).fill(0);
+        choices = new Array(questions.length).fill(0);
         // Shuffle Quesions
         questions.sort(() => Math.random() - 0.5);
 
         $("#btn-strongly-positive")
             .click(() => {
-                scores[current_question] = +1.0;
-                next_question()
+                choices[current_question] = +1.0;
+                next_question();
             });
         $("#btn-positive")
             .click(() => {
-                scores[current_question] = +0.25;
-                next_question()
+                choices[current_question] = +0.25;
+                next_question();
             });
         $("#btn-uncertain")
             .click(() => {
-                scores[current_question] = 0.0;
-                next_question()
+                choices[current_question] = 0.0;
+                next_question();
             });
         $("#btn-negative")
             .click(() => {
-                scores[current_question] = -0.25;
-                next_question()
+                choices[current_question] = -0.25;
+                next_question();
             });
         $("#btn-strongly-negative")
             .click(() => {
-                scores[current_question] = -1.0;
-                next_question()
+                choices[current_question] = -1.0;
+                next_question();
             });
 
         $("#btn-prev").click(() => {
-            prev_question()
+            prev_question();
         });
 
         render_question();
@@ -47,9 +48,9 @@ $(document).ready(function () {  // Use closure, no globals
         $("#question-text").html(questions[current_question].question);
         $("#question-number").html(`第 ${current_question + 1} 题 剩余 ${questions.length - current_question - 1} 题`);
         if (current_question === 0) {
-            $("#btn-prev").attr("disabled");
+            $("#btn-prev").addClass("disabled");
         } else {
-            $("#btn-prev").removeAttr("disabled");
+            $("#btn-prev").removeClass("disabled");
         }
     }
 
@@ -67,23 +68,43 @@ $(document).ready(function () {  // Use closure, no globals
             current_question--;
             render_question();
         }
+    }
 
+    function is_special_axis(axis) {
+        specials.some((value) => {
+            return value.name === axis;
+        })
     }
 
     function results() {
-        let score = {econ: 0, govt: 0, scty: 0, envo: 0};
-        let max_score = {...score};
-        for (let i = 0; i < scores.length; i += 1) {
-            for (let key of Object.keys(score)) {
-                score[key] += scores[i] * questions[i].effect[key];
-                max_score[key] += Math.abs(questions[i].effect[key]);
+
+        // 首先找到所有出现过的属性
+        let scores = {};
+        for (let q of questions) {
+            for (let axis in q.effect) {
+                scores[axis] = 0;
             }
         }
 
-        for (let key of Object.keys(max_score)) {
-            score[key] = (score[key] + max_score[key]) / (2 * max_score[key]);
-            score[key] = Math.round(score[key] * 100);
+        let max_scores = {...scores};
+
+        for (let i = 0; i < questions.length; i++) {
+            for (let axis in questions[i].effect) {
+                scores[axis] += (is_special_axis(axis) ? Math.max(choices[i], 0) : choices[i])
+                    * questions[i].effect[axis];
+                max_scores[axis] += Math.abs(questions[i].effect[axis]);
+            }
         }
-        location.href = "results.html?" + $.param(score);
+
+        for (let axis in scores) {
+            if (is_special_axis(axis)) {
+                scores[axis] = scores[axis] / max_scores[axis];
+            } else {
+                scores[axis] = (scores[axis] + max_scores[axis]) / (2 * max_scores[axis]);
+            }
+            scores[axis] = Math.round(scores[axis] * 100);
+        }
+
+        location.href = "results.html?" + $.param(scores);
     }
 });

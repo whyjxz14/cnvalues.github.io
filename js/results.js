@@ -46,13 +46,6 @@ $(document).ready(() => {
     }
 
     function set_bar_and_percent(left_name, right_name, value) {
-        // innerel = document.getElementById(name)
-        // outerel = document.getElementById("bar-" + name)
-        // outerel.style.width = (value + "%")
-        // innerel.innerHTML = (value + "%")
-        // if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-        //     innerel.style.visibility = "hidden"
-        // }
         $("#bar-" + left_name).css({"width": value + "%"})
         $("#percent-" + left_name).html(value + "%")
         $("#percent-" + right_name).html((100 - value) + "%")
@@ -68,6 +61,18 @@ $(document).ready(() => {
         set_bar_and_percent("liberty", "authority", liberty)
         set_bar_and_percent("progress", "tradition", progress)
         set_bar_and_percent("ecology", "production", ecology)
+
+        specials.forEach((item) => {
+            let value = get_value(item.id)
+            if (!isNaN(value)) {
+                if (value >= 50) {
+                    $("#" + item.id + "-show").removeClass("hide")
+                    if (value < 75) {
+                        $("#" + item.id + "-show img").css({"opacity": "50%"})
+                    }
+                }
+            }
+        })
 
         $("#label-econ").html(get_label(equality, econ_arr))
         $("#label-govt").html(get_label(liberty, govt_arr))
