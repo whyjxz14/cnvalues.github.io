@@ -71,7 +71,7 @@ $(document).ready(function () {
     }
 
     function is_special_axis(axis) {
-        specials.some((value) => {
+        return specials.some((value) => {
             return value.id === axis;
         })
     }
@@ -90,6 +90,7 @@ $(document).ready(function () {
 
         for (let i = 0; i < questions.length; i++) {
             for (let axis in questions[i].effect) {
+                console.log(axis + ":" + is_special_axis(axis))
                 let choice = choices[i];
                 if (is_special_axis(axis)) {
                     if (questions[i].effect[axis] > 0) {
