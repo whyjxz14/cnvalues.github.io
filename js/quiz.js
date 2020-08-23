@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     function is_special_axis(axis) {
         specials.some((value) => {
-            return value.name === axis;
+            return value.id === axis;
         })
     }
 
