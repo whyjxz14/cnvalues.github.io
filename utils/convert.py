@@ -14,7 +14,7 @@ def get_parser() -> argparse.ArgumentParser:
                         help='set <input.csv> (required) and <output.js> (optional, \"questions.js\" by default)',
                         metavar=('input.csv', 'output.js'))
     parser.add_argument('-s', '--special', nargs='+', type=str,
-                        help='set <input.csv> (required) and <output.js> (optional, \"special.js\" by default)',
+                        help='set <input.csv> (required) and <output.js> (optional, \"specials.js\" by default)',
                         metavar=('input.csv', 'output.js'))
     return parser
 
@@ -33,28 +33,47 @@ def convert_ideology(input: str, output: str = 'ideologies.js'):
         if pd.isna(row[ideo_name]):
             continue
         item = {
-            "name": row[ideo_name],
-            "stats": {
-                "econ": int(row[econ_name]),
-                "govt": int(row[govt_name]),
-                "scty": int(row[scty_name]),
+            'name': row[ideo_name],
+            'stats': {
+                'econ': int(row[econ_name]),
+                'govt': int(row[govt_name]),
+                'scty': int(row[scty_name]),
             },
-            "desc": row[desc_name],
-            "link": row[link_name]
+            'desc': row[desc_name],
+            'link': row[link_name]
         }
         ideologies.append(item)
     json_str = json.dumps(ideologies, ensure_ascii=False, indent=4)
     with codecs.open(output, 'w', encoding='utf-8') as f:
-        f.write('ideologies = ' + json_str + ';')
+        f.write('ideologies = ' + json_str + ';\n')
 
 
 def convert_question(input: str, output: str = 'questions.js'):
     ques_name = '内容'
-    econ_name = '平等'
-    govt_name = '自由'
-    scty_name = '进步'
-    envo_name = '生态'
-    spec_name = '特殊'
+    axes_name_to_id = {
+        '平等': 'econ',
+        '自由': 'govt',
+        '进步': 'scty',
+        '生态': 'envo',
+        '入关': 'ruguan',
+        '阴谋论': 'yinmou',
+        '一神论': 'onegod',
+        '儒家': 'rujia',
+        '工业党': 'gongye',
+        '毛左': 'maozuo',
+        '皇汉': 'han',
+        '诸夏': 'zhuxia',
+        '国粉': 'guofen',
+        '女权主义': 'nvquan',
+        '民粹主义': 'mincui',
+        '政治冷感': 'suijing',
+        '全盘西化': 'dengta',
+        '逆向民族主义': 'nimin',
+        '地方主义': 'difang',
+        '社会达尔文主义': 'sheda',
+        '精神资本家': 'jingzi',
+        '中国特色社会主义': 'tese',
+    }
     df = pd.read_csv(input)
     print(df)
     questions = []
@@ -62,29 +81,44 @@ def convert_question(input: str, output: str = 'questions.js'):
         if pd.isna(row[ques_name]):
             continue
         item = {
-            "question": row[ques_name],
-            "effect": {
-                "econ": 0 if pd.isna(row[econ_name]) else int(row[econ_name]),
-                "govt": 0 if pd.isna(row[govt_name]) else int(row[govt_name]),
-                "scty": 0 if pd.isna(row[scty_name]) else int(row[scty_name]),
-                "envo": 0 if pd.isna(row[envo_name]) else int(row[envo_name]),
-            }
+            'question': row[ques_name],
+            'effect': {}
         }
-        if not pd.isna(row[spec_name]):
-            item.update({'special': row[spec_name]})
+        for name, id in axes_name_to_id.items():
+            if not pd.isna(row[name]):
+                item['effect'][id] = int(row[name])
         questions.append(item)
     json_str = json.dumps(questions, ensure_ascii=False, indent=4)
     with codecs.open(output, 'w', encoding='utf-8') as f:
-        f.write('questions = ' + json_str + ';')
+        f.write('questions = ' + json_str + ';\n')
 
 
-def convert_special(input: str, output: str = 'special.js'):
-    raise NotImplementedError()
+def convert_special(input: str, output: str = 'specials.js'):
+    spec_name = '特性'
+    spec_id = 'id'
+    spec_desc = '描述'
+    df = pd.read_csv(input)
+    print(df)
+    specials = []
+    for _, row in df.iterrows():
+        if pd.isna(row[spec_name]):
+            continue
+        item = {
+            'id': row[spec_id],
+            'name': row[spec_name],
+            'desc': row[spec_desc]
+        }
+        specials.append(item)
+    json_str = json.dumps(specials, ensure_ascii=False, indent=4)
+    with codecs.open(output, 'w', encoding='utf-8') as f:
+        f.write('specials = ' + json_str + ';\n')
 
 
 if __name__ == '__main__':
     parser = get_parser()
     args = vars(parser.parse_args())
+    if not any(args.values()):
+        parser.print_help()
     if args['ideology'] is not None:
         ideology = args['ideology']
         if len(ideology) <= 2:

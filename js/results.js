@@ -62,10 +62,13 @@ $(document).ready(() => {
         set_bar_and_percent("progress", "tradition", progress)
         set_bar_and_percent("ecology", "production", ecology)
 
+        let special_desc = ""
         specials.forEach((item) => {
             let value = get_value(item.id)
             if (!isNaN(value)) {
-                if (value >= 50) {
+                if (value >= 25) {
+                    // todo 特性的描述完成之后取消注释下一行即可
+                    // special_desc += item.name + "：" + item.desc + "<br>"
                     $("#" + item.id + "-show").removeClass("hide")
                     if (value < 75) {
                         $("#" + item.id + "-show img").css({"opacity": "50%"})
@@ -73,6 +76,7 @@ $(document).ready(() => {
                 }
             }
         })
+        $("#special-desc").html(special_desc)
 
         $("#label-econ").html(get_label(equality, econ_arr))
         $("#label-govt").html(get_label(liberty, govt_arr))

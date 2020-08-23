@@ -27,5 +27,9 @@ img {
 }
 
 #special-row div {
-    margin: 0;
+    margin: 0 0 1rem;
+}
+
+#special-row img {
+    width: 50%;
 }
