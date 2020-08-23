@@ -36,7 +36,7 @@ ideologies = [
             "govt": 30,
             "scty": 75
         },
-        "desc": "列宁主义（Leninism）主张建立民主集中制的先锋党并通过革命推翻资本主义，为了实现目标，不排斥临时的强制政策。代表人物：弗拉基米尔·列宁，切·格瓦拉，菲德尔·卡斯特罗",
+        "desc": "列宁主义（Leninism）主张建立民主集中制的先锋党并通过革命推翻资本主义，为了实现目标，不排斥临时的强制政策。代表人物：弗拉基米尔·列宁，切·格瓦拉，菲德尔·卡斯特罗，马前卒（任冲昊），汪晖",
         "link": "https://en.wikipedia.org/wiki/Leninism"
     },
     {
@@ -86,7 +86,7 @@ ideologies = [
             "govt": 25,
             "scty": 50
         },
-        "desc": "左翼民族主义（Left-Wing Nationalism）相信社会平等、人民主权、民族自决与解放，并且具有强烈的反帝国主义色彩，但也可能会有一定的族群偏见。代表人物：乌戈·查韦斯，埃沃·莫拉莱斯，尼古拉·斯特金",
+        "desc": "左翼民族主义（Left-Wing Nationalism）相信社会平等、人民主权、民族自决与解放，并且具有强烈的反帝国主义色彩，但也可能会有一定的族群偏见。代表人物：乌戈·查韦斯，埃沃·莫拉莱斯，尼古拉·斯特金，温铁军，胡锡进，司马南，孔庆东，赵皓阳",
         "link": "https://en.wikipedia.org/wiki/Left-wing_nationalism"
     },
     {
@@ -96,7 +96,7 @@ ideologies = [
             "govt": 0,
             "scty": 20
         },
-        "desc": "民族布尔什维克主义（National Bolshevism）主张将苏联式的政治经济体制与法西斯的民族主义理念结合起来，反对民主，私有经济和国际主义。代表人物：恩斯特·尼基什，爱德华·利莫诺夫，亚历山大·杜金",
+        "desc": "民族布尔什维克主义（National Bolshevism）主张将苏联式的政治经济体制与法西斯的民族主义理念结合起来，反对民主，私有经济和国际主义。代表人物：恩斯特·尼基什，爱德华·利莫诺夫，亚历山大·杜金，陈平，张维为",
         "link": "https://en.wikipedia.org/wiki/National_Bolshevism"
     },
     {
@@ -126,7 +126,7 @@ ideologies = [
             "govt": 60,
             "scty": 70
         },
-        "desc": "社会自由主义（Social Liberalism/New Liberalism）是一种更加倾向于社会公平及经济干预的自由主义，并且尤其重视社会和文化的进步。代表人物：富兰克林·罗斯福，卢武铉，贾斯丁·特鲁多，巴拉克·奥巴马",
+        "desc": "社会自由主义（Social Liberalism/New Liberalism/Modern Liberalism/Left Liberalism）是一种更加倾向于社会公平及经济干预的自由主义，并且尤其重视社会和文化的进步。代表人物：富兰克林·罗斯福，卢武铉，贾斯丁·特鲁多，巴拉克·奥巴马，方舟子，陈纯，秦晖，周保松",
         "link": "https://en.wikipedia.org/wiki/Social_liberalism"
     },
     {
@@ -140,13 +140,13 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Christian_democracy"
     },
     {
-        "name": "纳粹主义",
+        "name": "民族社会主义",
         "stats": {
             "econ": 50,
             "govt": 0,
             "scty": 10
         },
-        "desc": "纳粹主义（Nazism）是法西斯主义的形式之一，推崇种族主义，并且比一般的法西斯主义更加倾向于国家统辖经济。代表人物：阿道夫·希特勒，约瑟夫·戈培尔，格雷戈尔·施特拉塞",
+        "desc": "民族社会主义（National Socialism，或称纳粹主义[Nazism]）是法西斯主义的形式之一，推崇种族主义，并且比一般的法西斯主义更加倾向于国家统辖经济。代表人物：阿道夫·希特勒，约瑟夫·戈培尔，格雷戈尔·施特拉塞",
         "link": "https://en.wikipedia.org/wiki/Nazism"
     },
     {
@@ -186,7 +186,7 @@ ideologies = [
             "govt": 90,
             "scty": 60
         },
-        "desc": "自由意志主义（Libertarianism）主张外交上的孤立主义与经济上的充分放任，强调伦理正当性而非功利，以及对军警等国家暴力的抗拒。代表人物：亨利·乔治，伦纳德·里德，罗恩·保罗",
+        "desc": "自由意志主义（Libertarianism）主张外交上的孤立主义与经济上的充分放任，强调伦理正当性而非功利，以及对军警等国家暴力的抗拒。代表人物：亨利·乔治，弗里德里希·哈耶克，伦纳德·里德，罗恩·保罗，李子旸，连岳",
         "link": "https://en.wikipedia.org/wiki/Libertarianism"
     },
     {
@@ -196,7 +196,7 @@ ideologies = [
             "govt": 55,
             "scty": 50
         },
-        "desc": "新自由主义（Neoliberalism）主张大规模的私有化和缩小政府，同时在外交方面依靠政府组建贸易同盟和对敌经济制裁来保证自由主义的影响力。代表人物：比尔·克林顿，",
+        "desc": "新自由主义（Neoliberalism）主张大规模的私有化和缩小政府，同时在外交方面依靠政府组建贸易同盟和对敌经济制裁来保证自由主义的影响力。代表人物：比尔·克林顿，资中筠，茅于轼，郎咸平",
         "link": "https://en.wikipedia.org/wiki/Neoliberalism"
     },
     {
@@ -206,7 +206,7 @@ ideologies = [
             "govt": 40,
             "scty": 30
         },
-        "desc": "保守主义（Conservatism）源于法国大革命的反对派，它推崇传统的宗教价值、政治体制与财产分配，意在维护社会稳定和延续。代表人物：卡尔文·柯立芝，温斯顿·丘吉尔，夏尔·戴高乐",
+        "desc": "保守主义（Conservatism）源于法国大革命的反对派，它推崇传统的宗教价值、政治体制与财产分配，意在维护社会稳定和延续。代表人物：卡尔文·柯立芝，温斯顿·丘吉尔，夏尔·戴高乐，刘军宁",
         "link": "https://en.wikipedia.org/wiki/Conservatism"
     },
     {
@@ -216,7 +216,7 @@ ideologies = [
             "govt": 30,
             "scty": 25
         },
-        "desc": "新保守主义（Neoconservatism）认为民主自由来源于国家传统，因而主张激进地压制文化左翼，捍卫传统，构建爱国主义，制裁国际反民主势力。代表人物：罗纳德·里根，玛格丽特·撒切尔，中曾根康弘",
+        "desc": "新保守主义（Neoconservatism）认为民主自由来源于国家传统，因而主张激进地压制文化左翼，捍卫传统，构建爱国主义，制裁国际反民主势力。代表人物：罗纳德·里根，玛格丽特·撒切尔，中曾根康弘，刘小枫",
         "link": "https://en.wikipedia.org/wiki/Neoconservatism"
     },
     {
@@ -226,7 +226,7 @@ ideologies = [
             "govt": 15,
             "scty": 30
         },
-        "desc": "威权资本主义（Authoritarian Capitalism）是威权体制下的资本主义市场经济，限制个人的自由和政治权利，其政府通常长期由一党领导。代表人物：朴正熙，奥古斯托·皮诺切特，弗拉基米尔·普京，李光耀",
+        "desc": "威权资本主义（Authoritarian Capitalism）是威权体制下的资本主义市场经济，限制个人的自由和政治权利，其政府通常长期由一党领导。代表人物：朴正熙，奥古斯托·皮诺切特，弗拉基米尔·普京，李光耀，郑永年，李世默",
         "link": "https://en.wikipedia.org/wiki/Authoritarian_capitalism"
     },
     {
