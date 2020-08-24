@@ -25,8 +25,8 @@ specials = [
         "desc": NaN
     },
     {
-        "id": "maozuo",
-        "name": "毛左",
+        "id": "mao",
+        "name": "毛粉",
         "desc": NaN
     },
     {
@@ -47,11 +47,6 @@ specials = [
     {
         "id": "nvquan",
         "name": "女权主义",
-        "desc": NaN
-    },
-    {
-        "id": "mincui",
-        "name": "民粹主义",
         "desc": NaN
     },
     {
