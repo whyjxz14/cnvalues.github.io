@@ -86,7 +86,7 @@ ideologies = [
             "govt": 25,
             "scty": 50
         },
-        "desc": "左翼民粹主义（Left-Wing Populism）反对建制派精英，主张“人民”的权益，反对经济全球化。与右翼民粹主义不同的是，它还反对资本主义，主张社会公平，且没有强烈的排外情绪。<br>代表人物：乌戈·查韦斯，埃沃·莫拉莱斯，温铁军，胡锡进，司马南，孔庆东，赵皓阳",
+        "desc": "左翼民粹主义（Left-Wing Populism）反对建制派精英，主张社会公平，尤其是保障底层民众，并反对经济全球化和过度的资本主义。<br>代表人物：乌戈·查韦斯，埃沃·莫拉莱斯，温铁军，胡锡进，司马南，孔庆东，赵皓阳",
         "link": "https://en.wikipedia.org/wiki/Left-wing_populism"
     },
     {
@@ -126,7 +126,7 @@ ideologies = [
             "govt": 60,
             "scty": 70
         },
-        "desc": "社会自由主义（Social Liberalism）是一种更加倾向于社会公平及经济干预的自由主义，并且尤其重视社会和文化的进步。<br>代表人物：约翰·杜威，约翰·罗尔斯，富兰克林·罗斯福，卢武铉，贾斯丁·特鲁多，巴拉克·奥巴马，方舟子，陈纯，秦晖，周保松",
+        "desc": "社会自由主义（Social Liberalism）是一种更加倾向于社会公平及经济干预的自由主义，并且尤其重视社会和文化的进步。<br>代表人物：约翰·杜威，约翰·罗尔斯，富兰克林·罗斯福，卢武铉，贾斯丁·特鲁多，巴拉克·奥巴马，陈纯，秦晖，周保松，周濂",
         "link": "https://en.wikipedia.org/wiki/Social_liberalism"
     },
     {
@@ -166,8 +166,8 @@ ideologies = [
             "govt": 25,
             "scty": 20
         },
-        "desc": "右翼民粹主义（Right-Wing Populism）反对建制派精英，主张“人民”的权益，并支持严格管控移民。在经济上，它主张贸易保护和反全球化。<br>代表人物：唐纳德·特朗普，雅伊尔·博索纳罗，鲍里斯·约翰逊",
-        "link": "https://en.wikipedia.org/wiki/Economic_nationalism"
+        "desc": "右翼民粹主义（Right-Wing Populism）右翼民粹主义反对建制派精英，主张贸易保护和反全球化，要求本国人优先，并严格管控移民。<br>代表人物：唐纳德·特朗普，雅伊尔·博索纳罗，鲍里斯·约翰逊",
+        "link": "https://en.wikipedia.org/wiki/Right-wing_populism"
     },
     {
         "name": "法西斯主义",
@@ -194,7 +194,7 @@ ideologies = [
         "stats": {
             "econ": 30,
             "govt": 55,
-            "scty": 50
+            "scty": 60
         },
         "desc": "新自由主义（Neoliberalism）主张大规模的私有化和缩小政府，同时在外交方面依靠政府组建贸易同盟和对敌经济制裁来保证自由主义的影响力。<br>代表人物：比尔·克林顿，资中筠，茅于轼，郎咸平",
         "link": "https://en.wikipedia.org/wiki/Neoliberalism"
@@ -234,7 +234,7 @@ ideologies = [
         "stats": {
             "econ": 15,
             "govt": 65,
-            "scty": 50
+            "scty": 60
         },
         "desc": "古典自由主义（Classical Liberalism）强调法治下的公民自由，特别是经济自由，它主张自由放任的经济政策，并认为政府的职能在于保护这些自由。<br>代表人物：约翰·洛克，亚当·斯密，约翰·斯图亚特·密尔",
         "link": "https://en.wikipedia.org/wiki/Classical_liberalism"
@@ -243,8 +243,8 @@ ideologies = [
         "name": "无政府资本主义",
         "stats": {
             "econ": 0,
-            "govt": 100,
-            "scty": 50
+            "govt": 95,
+            "scty": 60
         },
         "desc": "无政府资本主义（Anarcho-Capitalism）主张取消国家机器，按照互不侵犯原则组织社会，以保障私有制和市场经济的自由发展。<br>代表人物：穆瑞·罗斯巴德，汉斯-赫尔曼·霍普",
         "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism"
@@ -254,7 +254,7 @@ ideologies = [
         "stats": {
             "econ": 0,
             "govt": 85,
-            "scty": 50
+            "scty": 60
         },
         "desc": "小政府主义（Minarchism）主张政府的唯一功能是通过军警和法院来捍卫互不侵犯原则，从而保护公民免遭侵略、盗窃、违约、欺诈并强制执行财产法。<br>代表人物：罗伯特·诺齐克，安·兰德",
         "link": "https://en.wikipedia.org/wiki/Night-watchman_state"

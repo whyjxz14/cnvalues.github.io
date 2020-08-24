@@ -35,13 +35,13 @@ specials = [
         "desc": NaN
     },
     {
-        "id": "zhuxia",
-        "name": "诸夏",
+        "id": "jieti",
+        "name": "解体论",
         "desc": NaN
     },
     {
-        "id": "guofen",
-        "name": "国粉",
+        "id": "minguo",
+        "name": "民国派",
         "desc": NaN
     },
     {
@@ -75,13 +75,23 @@ specials = [
         "desc": NaN
     },
     {
-        "id": "jingzi",
-        "name": "精神资本家",
+        "id": "tese",
+        "name": "中国特色社会主义",
         "desc": NaN
     },
     {
-        "id": "tese",
-        "name": "中国特色社会主义",
+        "id": "haidao",
+        "name": "海盗党",
+        "desc": NaN
+    },
+    {
+        "id": "jiasu",
+        "name": "加速主义",
+        "desc": NaN
+    },
+    {
+        "id": "shequn",
+        "name": "社群主义",
         "desc": NaN
     }
 ];
