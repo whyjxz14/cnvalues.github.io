@@ -1,7 +1,7 @@
 specials = [
     {
         "id": "ruguan",
-        "name": "入关",
+        "name": "入关学",
         "desc": NaN
     },
     {

@@ -96,7 +96,7 @@ ideologies = [
             "govt": 0,
             "scty": 20
         },
-        "desc": "民族布尔什维克主义（National Bolshevism）主张将苏联式的政治经济体制与法西斯的民族主义理念结合起来，反对民主，私有经济和国际主义。<br>代表人物：恩斯特·尼基什，爱德华·利莫诺夫，亚历山大·杜金，陈平，张维为",
+        "desc": "民族布尔什维克主义（National Bolshevism）主张将苏联式的政治经济体制与法西斯的民族主义理念结合起来，反对民主，私有经济和国际主义。<br>代表人物：恩斯特·尼基什，爱德华·利莫诺夫，亚历山大·杜金，张维为",
         "link": "https://en.wikipedia.org/wiki/National_Bolshevism"
     },
     {
@@ -116,7 +116,7 @@ ideologies = [
             "govt": 90,
             "scty": 80
         },
-        "desc": "左翼自由意志主义（Left-Libertarianism）在坚持自由意志主义的同时抵制资本主义的私有制和雇佣劳动，尤其反对私人占有自然资源。<br>代表人物：大卫·艾勒曼，希尔·斯泰纳，菲利普·范·帕里斯",
+        "desc": "左翼自由意志主义（Left-Libertarianism）在坚持自由意志主义的同时抵制资本主义的私有制和雇佣劳动，尤其反对私人占有自然资源。<br>代表人物：亨利·乔治，大卫·艾勒曼，希尔·斯泰纳，菲利普·范·帕里斯",
         "link": "https://en.wikipedia.org/wiki/Left-libertarianism"
     },
     {
@@ -134,7 +134,7 @@ ideologies = [
         "stats": {
             "econ": 50,
             "govt": 45,
-            "scty": 40
+            "scty": 50
         },
         "desc": "进步保守主义（Progressive Conservatism）结合了保守主义和进步主义的主张，支持有限度的社会安全网和财富再分配，以及渐进的社会变革。<br>代表人物：本杰明·迪斯雷利，安格拉·默克尔，戴维·卡梅伦，特雷莎·梅",
         "link": "https://en.wikipedia.org/wiki/Progressive_conservatism"
@@ -148,6 +148,16 @@ ideologies = [
         },
         "desc": "民族社会主义（National Socialism）是法西斯主义的形式之一，推崇种族主义，并且比一般的法西斯主义更加倾向于国家统辖经济。<br>代表人物：阿道夫·希特勒，约瑟夫·戈培尔，格雷戈尔·施特拉塞",
         "link": "https://en.wikipedia.org/wiki/Nazism"
+    },
+    {
+        "name": "庇隆主义",
+        "stats": {
+            "econ": 50,
+            "govt": 15,
+            "scty": 50
+        },
+        "desc": "庇隆主义（Peronism），又称正义主义（Justicialism），是由阿根廷前总统胡安·庇隆提出的政治主张，可概括为三大口号：政治主权、经济独立、社会正义。实际执行中，其以国家复兴和民族解放为主要内容，同时主张中央集权。<br>代表人物：胡安·庇隆，埃克托尔·何塞·坎波拉",
+        "link": "https://en.wikipedia.org/wiki/Peronism"
     },
     {
         "name": "个人无政府主义",
@@ -164,9 +174,9 @@ ideologies = [
         "stats": {
             "econ": 40,
             "govt": 25,
-            "scty": 20
+            "scty": 25
         },
-        "desc": "右翼民粹主义（Right-Wing Populism）右翼民粹主义反对建制派精英，主张贸易保护和反全球化，要求本国人优先，并严格管控移民。<br>代表人物：唐纳德·特朗普，雅伊尔·博索纳罗，鲍里斯·约翰逊",
+        "desc": "右翼民粹主义（Right-Wing Populism）右翼民粹主义反对建制派精英，主张贸易保护和反全球化，要求本国人优先，并严格管控移民。<br>代表人物：唐纳德·特朗普，雅伊尔·博索纳罗，鲍里斯·约翰逊，陈平，李子旸",
         "link": "https://en.wikipedia.org/wiki/Right-wing_populism"
     },
     {
@@ -186,7 +196,7 @@ ideologies = [
             "govt": 90,
             "scty": 60
         },
-        "desc": "自由意志主义（Libertarianism）主张外交上的孤立主义与经济上的充分放任，强调伦理正当性而非功利，以及对军警等国家暴力的抗拒。<br>代表人物：亨利·乔治，弗里德里希·哈耶克，伦纳德·里德，罗恩·保罗，张维迎，朱海就，张五常",
+        "desc": "自由意志主义（Libertarianism）主张外交上的孤立主义与经济上的充分放任，强调伦理正当性而非功利，以及对军警等国家暴力的抗拒。<br>代表人物：弗里德里希·哈耶克，伦纳德·里德，罗恩·保罗，张维迎，朱海就，张五常",
         "link": "https://en.wikipedia.org/wiki/Libertarianism"
     },
     {
