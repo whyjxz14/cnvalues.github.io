@@ -3,8 +3,12 @@ $.ajax({
     url: "info/version.json",
     dataType: "json",
     success: (data) => {
-        if (window.location.href !== data.url && window.location.href !== "localhost") {
-            window.location.replace(data.url)
+        if (![data.hostname, "localhost", "127.0.0.1"].some((value) => {
+            return window.location.hostname === value
+        })) {
+            let url = "https://" + data.hostname
+            alert("项目已迁移至 " + url)
+            window.location.href = url
         }
     }
 })
