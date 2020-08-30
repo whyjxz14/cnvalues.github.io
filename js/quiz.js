@@ -18,7 +18,7 @@ $(document).ready(function () {
             });
         $("#btn-positive")
             .click(() => {
-                choices[current_question] = +0.25;
+                choices[current_question] = +0.33;
                 next_question();
             });
         $("#btn-uncertain")
@@ -28,7 +28,7 @@ $(document).ready(function () {
             });
         $("#btn-negative")
             .click(() => {
-                choices[current_question] = -0.25;
+                choices[current_question] = -0.33;
                 next_question();
             });
         $("#btn-strongly-negative")

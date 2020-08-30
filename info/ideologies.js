@@ -176,7 +176,7 @@ ideologies = [
             "govt": 25,
             "scty": 25
         },
-        "desc": "右翼民粹主义（Right-Wing Populism）右翼民粹主义反对建制派精英，主张贸易保护和反全球化，要求本国人优先，并严格管控移民。<br>代表人物：唐纳德·特朗普，雅伊尔·博索纳罗，鲍里斯·约翰逊，陈平，李子旸",
+        "desc": "右翼民粹主义（Right-Wing Populism）反对建制派精英，主张贸易保护和反全球化，要求本国人优先，并严格管控移民。<br>代表人物：唐纳德·特朗普，雅伊尔·博索纳罗，鲍里斯·约翰逊，陈平，李子旸",
         "link": "https://en.wikipedia.org/wiki/Right-wing_populism"
     },
     {
@@ -256,7 +256,7 @@ ideologies = [
             "govt": 95,
             "scty": 60
         },
-        "desc": "无政府资本主义（Anarcho-Capitalism）主张取消国家机器，按照互不侵犯原则组织社会，以保障私有制和市场经济的自由发展。<br>代表人物：穆瑞·罗斯巴德，汉斯-赫尔曼·霍普",
+        "desc": "无政府资本主义（Anarcho-Capitalism）主张取消国家机器，按照互不侵犯原则组织社会，以保障私有制和市场经济的自由发展。<br>代表人物：穆瑞·罗斯巴德，汉斯-赫尔曼·霍普，塞缪尔·爱德华·康金三世",
         "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism"
     },
     {
