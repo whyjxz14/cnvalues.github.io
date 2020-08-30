@@ -34,15 +34,13 @@ $(document).ready(() => {
     }
 
     function get_value(value_name) {
-        const query = window.location.search.substring(1);
-        const vars = query.split("&");
-        for (let i = 0; i < vars.length; i++) {
-            const pair = vars[i].split("=");
-            if (pair[0] === value_name) {
-                return pair[1]
-            }
+        let query;
+        if (window.location.search) {
+            query = window.location.search.substring(1);
+        } else {
+            query = window.location.hash.substring(1);
         }
-        return NaN;
+        return (new URLSearchParams(query)).get(value_name);
     }
 
     function set_bar_and_percent(left_name, right_name, value) {
