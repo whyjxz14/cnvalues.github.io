@@ -68,7 +68,7 @@ $(document).ready(() => {
             if (!isNaN(value)) {
                 if (value >= 33) {
                     // todo 特性的描述完成之后取消注释下一行即可
-                    special_desc += item.name + "：" + item.desc + "<br>"
+                    special_desc += "<strong>" + item.name + "</strong>：" + item.desc + "<br>"
                     $("#" + item.id + "-show").removeClass("hide")
                     if (value < 66) {
                         $("#" + item.id + "-show img").css({"opacity": "50%"})
