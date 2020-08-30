@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     let choices;
+    let enableDebug;
     let current_question = 0;
 
     initialize();
@@ -113,6 +114,10 @@ $(document).ready(function () {
             scores[axis] = Math.round(scores[axis] * 100);
         }
 
-        location.href = "results.html?" + $.param(scores);
+        if (enableDebug) {
+            location.href = "results.html?" + $.param(scores);
+        } else {
+            location.href = "results.html#" + $.param(scores);
+        }
     }
 });
