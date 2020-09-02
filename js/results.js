@@ -44,9 +44,9 @@ $(document).ready(() => {
     }
 
     function set_bar_and_percent(left_name, right_name, value) {
-        $(`#bar-${left_name}`).css({"width": value + "%"})
-        $(`#percent-${left_name}`).html(value + "%")
-        $(`#percent-${right_name}`).html((100 - value) + "%")
+        $("#bar-" + left_name).css({"width": value + "%"})
+        $("#percent-" + left_name).html(value + "%")
+        $("#percent-" + right_name).html((100 - value) + "%")
     }
 
     function initialize() {
@@ -64,12 +64,12 @@ $(document).ready(() => {
         specials.forEach((item) => {
             let value = get_value(item.id)
             if (!isNaN(value)) {
-                if (value >= 66) {
+                if (value >= 33) {
                     // todo 特性的描述完成之后取消注释下一行即可
-                    special_desc += `<strong>${item.name}</strong>：${item.desc}<br>`
-                    $(`#${item.id}-show`).removeClass("hide")
-                    if (value < 83) {
-                        $(`#${item.id}-show img`).css({"opacity": "50%"})
+                    special_desc += "<strong>" + item.name + "</strong>：" + item.desc + "<br>"
+                    $("#" + item.id + "-show").removeClass("hide")
+                    if (value < 66) {
+                        $("#" + item.id + "-show img").css({"opacity": "50%"})
                     }
                 }
             }
