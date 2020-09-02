@@ -91,26 +91,25 @@ $(document).ready(function () {
 
         for (let i = 0; i < questions.length; i++) {
             for (let axis in questions[i].effect) {
-                console.log(axis + ":" + is_special_axis(axis))
                 let choice = choices[i];
-                if (is_special_axis(axis)) {
-                    if (questions[i].effect[axis] > 0) {
-                        choice = Math.max(choice, 0);
-                    } else {
-                        choice = Math.min(choice, 0);
-                    }
-                }
+                // if (is_special_axis(axis)) {
+                //     if (questions[i].effect[axis] > 0) {
+                //         choice = Math.max(choice, 0);
+                //     } else {
+                //         choice = Math.min(choice, 0);
+                //     }
+                // }
                 scores[axis] += choice * questions[i].effect[axis];
                 max_scores[axis] += Math.abs(questions[i].effect[axis]);
             }
         }
 
         for (let axis in scores) {
-            if (is_special_axis(axis)) {
-                scores[axis] = scores[axis] / max_scores[axis];
-            } else {
-                scores[axis] = (scores[axis] + max_scores[axis]) / (2 * max_scores[axis]);
-            }
+            // if (is_special_axis(axis)) {
+            //     scores[axis] = scores[axis] / max_scores[axis];
+            // } else {
+            //     scores[axis] = (scores[axis] + max_scores[axis]) / (2 * max_scores[axis]);
+            // }
             scores[axis] = Math.round(scores[axis] * 100);
         }
 
