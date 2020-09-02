@@ -64,11 +64,11 @@ $(document).ready(() => {
         specials.forEach((item) => {
             let value = get_value(item.id)
             if (!isNaN(value)) {
-                if (value >= 33) {
+                if (value >= 66) {
                     // todo 特性的描述完成之后取消注释下一行即可
                     special_desc += "<strong>" + item.name + "</strong>：" + item.desc + "<br>"
                     $("#" + item.id + "-show").removeClass("hide")
-                    if (value < 66) {
+                    if (value < 83) {
                         $("#" + item.id + "-show img").css({"opacity": "50%"})
                     }
                 }
