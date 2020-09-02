@@ -110,6 +110,7 @@ $(document).ready(function () {
             // } else {
             //     scores[axis] = (scores[axis] + max_scores[axis]) / (2 * max_scores[axis]);
             // }
+            scores[axis] = (scores[axis] + max_scores[axis]) / (2 * max_scores[axis]);
             scores[axis] = Math.round(scores[axis] * 100);
         }
 
